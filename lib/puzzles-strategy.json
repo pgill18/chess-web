@@ -1,0 +1,842 @@
+[
+ {
+  "id": "S1-s1",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "e4"
+  ],
+  "explanation": "Open with a central pawn to grab space and free your pieces."
+ },
+ {
+  "id": "S1-s2",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq e6 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "Nf3"
+  ],
+  "explanation": "Develop a knight toward the center and attack the e5 pawn."
+ },
+ {
+  "id": "S1-s3",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+  "sideToMove": "w",
+  "solution": [
+   "Bb5"
+  ],
+  "explanation": "Develop the bishop actively (Ruy Lopez), pressuring the knight that guards e5."
+ },
+ {
+  "id": "S1-s4",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq d6 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "c4"
+  ],
+  "explanation": "Challenge the center immediately with the Queen's Gambit."
+ },
+ {
+  "id": "S1-s5",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+  "sideToMove": "w",
+  "solution": [
+   "c4"
+  ],
+  "explanation": "Claim central space and prepare rapid development."
+ },
+ {
+  "id": "S1-s6",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq c6 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "Nf3"
+  ],
+  "explanation": "Develop before committing pawns; the knight eyes d4 and the center."
+ },
+ {
+  "id": "S1-s7",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ],
+  "explanation": "Build a broad pawn center against the French."
+ },
+ {
+  "id": "S1-s8",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ],
+  "explanation": "Occupy the center against the Caro-Kann."
+ },
+ {
+  "id": "S1-s9",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+  "sideToMove": "w",
+  "solution": [
+   "Nc3"
+  ],
+  "explanation": "Develop a knight and pile pressure on d5."
+ },
+ {
+  "id": "S1-s10",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "king-safety",
+  "source": "authored",
+  "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+  "sideToMove": "w",
+  "solution": [
+   "O-O"
+  ],
+  "explanation": "Castle early to tuck the king away and connect the rooks."
+ },
+ {
+  "id": "S1-s11",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+  "sideToMove": "w",
+  "solution": [
+   "Ba4"
+  ],
+  "explanation": "Keep the pin alive by retreating along the diagonal instead of trading."
+ },
+ {
+  "id": "S1-s12",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+  "sideToMove": "w",
+  "solution": [
+   "Nc3"
+  ],
+  "explanation": "Develop and fight for the central d5 square."
+ },
+ {
+  "id": "S1-s13",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ],
+  "explanation": "Take the full center against the Pirc while you can."
+ },
+ {
+  "id": "S1-s14",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq e6 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "Nc3"
+  ],
+  "explanation": "Develop a knight (English) to contest the d5 square."
+ },
+ {
+  "id": "S1-s15",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkbnr/ppp1pppp/8/3p4/8/5N2/PPPPPPPP/RNBQKB1R w KQkq d6 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ],
+  "explanation": "Stake a claim in the center now that the knight supports it."
+ },
+ {
+  "id": "S1-s16",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR w KQkq - 2 3",
+  "sideToMove": "w",
+  "solution": [
+   "Nf3"
+  ],
+  "explanation": "Develop the knight, attacking e5 and preparing to castle."
+ },
+ {
+  "id": "S1-s17",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
+  "sideToMove": "w",
+  "solution": [
+   "c4"
+  ],
+  "explanation": "Challenge d5 to open lines for your pieces."
+ },
+ {
+  "id": "S1-s18",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkbnr/pppppp1p/6p1/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ],
+  "explanation": "Occupy the center against the Modern before Black strikes at it."
+ },
+ {
+  "id": "S1-s19",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ],
+  "explanation": "Strike at the center against the passive Philidor."
+ },
+ {
+  "id": "S1-s20",
+  "kind": "strategy",
+  "station": "S1",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq f6 0 2",
+  "sideToMove": "w",
+  "solution": [
+   "g3"
+  ],
+  "explanation": "Prepare a fianchetto to pressure Black's weakened light squares (Dutch)."
+ },
+ {
+  "id": "S2-s1",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "outpost",
+  "source": "authored",
+  "fen": "r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+  "sideToMove": "w",
+  "solution": [
+   "Nxd4"
+  ],
+  "explanation": "Recapture toward the center; the knight sits on the strong d4 square."
+ },
+ {
+  "id": "S2-s2",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "outpost",
+  "source": "authored",
+  "fen": "rnbqkbnr/pp2pppp/3p4/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+  "sideToMove": "w",
+  "solution": [
+   "Nxd4"
+  ],
+  "explanation": "Centralize the knight on d4, an ideal outpost in the Open Sicilian."
+ },
+ {
+  "id": "S2-s3",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "outpost",
+  "source": "authored",
+  "fen": "r1bqkbnr/pppp1ppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+  "sideToMove": "w",
+  "solution": [
+   "Nxd4"
+  ],
+  "explanation": "Recapture and plant the knight on the central d4 square."
+ },
+ {
+  "id": "S2-s4",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "outpost",
+  "source": "authored",
+  "fen": "rnbqkbnr/pp1p1ppp/4p3/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+  "sideToMove": "w",
+  "solution": [
+   "Nxd4"
+  ],
+  "explanation": "The d4-knight dominates the center and eyes weak dark squares."
+ },
+ {
+  "id": "S2-s5",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "weak-square",
+  "source": "authored",
+  "fen": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq - 1 6",
+  "sideToMove": "w",
+  "solution": [
+   "Bd3"
+  ],
+  "explanation": "Aim the bishop at e4/h7 and prepare to fight for the central light squares."
+ },
+ {
+  "id": "S2-s6",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "weak-square",
+  "source": "authored",
+  "fen": "r1bqkbnr/pp1ppp1p/2n3p1/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "Nc3"
+  ],
+  "explanation": "Develop and control d5 — the hole Black created by playing ...g6 and ...c5."
+ },
+ {
+  "id": "S2-s7",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "space",
+  "source": "authored",
+  "fen": "rnbqkb1r/pppn1ppp/4p3/3pP3/3P4/2N5/PPP2PPP/R1BQKBNR w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "f4"
+  ],
+  "explanation": "Bolster the e5 spearhead and clamp down on the dark squares."
+ },
+ {
+  "id": "S2-s8",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "weak-square",
+  "source": "authored",
+  "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "Be2"
+  ],
+  "explanation": "Develop calmly; the advanced e5 pawn already fixes Black's cramped light squares."
+ },
+ {
+  "id": "S2-s9",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "space",
+  "source": "authored",
+  "fen": "rnbqkb1r/ppp1pp1p/6p1/3n4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "e4"
+  ],
+  "explanation": "Kick the knight and seize a broad center that denies Black good squares."
+ },
+ {
+  "id": "S2-s10",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "r1bqk1nr/pp1pppbp/2n3p1/1Bp5/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 2 5",
+  "sideToMove": "w",
+  "solution": [
+   "c3"
+  ],
+  "explanation": "Prepare d4 to build the center before Black completes his setup."
+ },
+ {
+  "id": "S2-s11",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "outpost",
+  "source": "authored",
+  "fen": "r1bqk1nr/pp1pppbp/2n3p1/2p5/4P3/2N3P1/PPPP1PBP/R1BQK1NR w KQkq - 2 5",
+  "sideToMove": "w",
+  "solution": [
+   "d3"
+  ],
+  "explanation": "Support e4 and prepare Nge2/Nd5, heading for the d5 outpost."
+ },
+ {
+  "id": "S2-s12",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "weak-square",
+  "source": "authored",
+  "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5",
+  "sideToMove": "w",
+  "solution": [
+   "Bg5"
+  ],
+  "explanation": "Pin the knight to pressure d5 and the e-file dark squares."
+ },
+ {
+  "id": "S2-s13",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "development",
+  "source": "authored",
+  "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "Nc3"
+  ],
+  "explanation": "Develop toward the center, keeping an eye on the d5 square."
+ },
+ {
+  "id": "S2-s14",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "outpost",
+  "source": "authored",
+  "fen": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "Nc3"
+  ],
+  "explanation": "Complete development; the d4-knight and c3-knight both fight for d5."
+ },
+ {
+  "id": "S2-s15",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "space",
+  "source": "authored",
+  "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PPP2/2N5/PPP3PP/R1BQKBNR w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "Nf3"
+  ],
+  "explanation": "Develop while your big pawn center restricts Black's pieces."
+ },
+ {
+  "id": "S2-s16",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "weak-square",
+  "source": "authored",
+  "fen": "rnbqk2r/ppppb1pp/4pn2/5p2/3P4/5NP1/PPP1PPBP/RNBQK2R w KQkq - 2 5",
+  "sideToMove": "w",
+  "solution": [
+   "O-O"
+  ],
+  "explanation": "Castle; the fianchetto bishop targets the light squares Black weakened with ...f5."
+ },
+ {
+  "id": "S2-s17",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "outpost",
+  "source": "authored",
+  "fen": "r1bqkb1r/pppp1ppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "Nc3"
+  ],
+  "explanation": "Develop and contest d5, the natural outpost in this structure."
+ },
+ {
+  "id": "S2-s18",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "weak-square",
+  "source": "authored",
+  "fen": "rnbqkb1r/ppp2ppp/8/3np3/8/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "Bg2"
+  ],
+  "explanation": "The fianchetto bishop bears down the long diagonal on Black's center."
+ },
+ {
+  "id": "S2-s19",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "outpost",
+  "source": "authored",
+  "fen": "r1bqkbnr/pp1p1ppp/2n5/4p3/3NP3/8/PPP2PPP/RNBQKB1R w KQkq e6 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "Nb5"
+  ],
+  "explanation": "Hop to b5 to exploit the d6 hole that ...e5 just created."
+ },
+ {
+  "id": "S2-s20",
+  "kind": "strategy",
+  "station": "S2",
+  "rung": "bronze",
+  "motif": "center",
+  "source": "authored",
+  "fen": "rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR w KQkq - 2 5",
+  "sideToMove": "w",
+  "solution": [
+   "e3"
+  ],
+  "explanation": "Solidify the center and keep control of the key e4 and c5 squares."
+ },
+ {
+  "id": "S3-s1",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "r1bqkbnr/1pp2ppp/p1p5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "O-O"
+  ],
+  "explanation": "Castle; Black's doubled c-pawns are a lasting structural target for the endgame (do not grab e5 — ...Qd4 regains the pawn)."
+ },
+ {
+  "id": "S3-s2",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqkbnr/ppp1pppp/8/8/2pP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+  "sideToMove": "w",
+  "solution": [
+   "e3"
+  ],
+  "explanation": "Prepare to recapture on c4 and keep a healthy, mobile pawn center."
+ },
+ {
+  "id": "S3-s3",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "r1bqkbnr/pppp1ppp/8/8/3nP3/8/PPP2PPP/RNBQKB1R w KQkq - 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "Qxd4"
+  ],
+  "explanation": "Recapture with the queen, keeping your pawns intact and centralized."
+ },
+ {
+  "id": "S3-s4",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5",
+  "sideToMove": "w",
+  "solution": [
+   "e3"
+  ],
+  "explanation": "Build a solid pawn chain and avoid creating weaknesses."
+ },
+ {
+  "id": "S3-s5",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "break",
+  "source": "authored",
+  "fen": "rnb1kbnr/pp2pppp/8/2pq4/8/2P5/PP1P1PPP/RNBQKBNR w KQkq - 0 4",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ],
+  "explanation": "Strike in the center with a pawn break to open lines for your pieces."
+ },
+ {
+  "id": "S3-s6",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqkbnr/ppp2ppp/8/3p4/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+  "sideToMove": "w",
+  "solution": [
+   "Nf3"
+  ],
+  "explanation": "Develop; the symmetrical pawns give a sound, weakness-free structure."
+ },
+ {
+  "id": "S3-s7",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "Bg5"
+  ],
+  "explanation": "Develop with tempo against d5, the base of Black's pawn structure."
+ },
+ {
+  "id": "S3-s8",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqkb1r/ppp2ppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "Nc3"
+  ],
+  "explanation": "Keep a healthy structure and finish developing."
+ },
+ {
+  "id": "S3-s9",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqkb1r/pp1p1ppp/4pn2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "Nc3"
+  ],
+  "explanation": "Sound development; your pawns are flexible while Black must free his c8-bishop."
+ },
+ {
+  "id": "S3-s10",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/3P4/3BPN2/PPP2PPP/RNBQK2R w KQkq c6 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "c3"
+  ],
+  "explanation": "Reinforce d4 and keep a stable pawn chain (Colle structure)."
+ },
+ {
+  "id": "S3-s11",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "r1bqk2r/pppp1ppp/2n2n2/1B2p3/1b2P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 6 5",
+  "sideToMove": "w",
+  "solution": [
+   "O-O"
+  ],
+  "explanation": "Castle; keep the tension and your intact kingside pawns."
+ },
+ {
+  "id": "S3-s12",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "e3"
+  ],
+  "explanation": "Support the center and keep a compact, healthy pawn formation."
+ },
+ {
+  "id": "S3-s13",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnb1kb1r/ppp1pppp/5n2/q7/3P4/2N5/PPP2PPP/R1BQKBNR w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "Nf3"
+  ],
+  "explanation": "Develop with tempo; your extra central pawn gives the healthier structure."
+ },
+ {
+  "id": "S3-s14",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "break",
+  "source": "authored",
+  "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ],
+  "explanation": "Play the d4 break to challenge the center and open lines."
+ },
+ {
+  "id": "S3-s15",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "break",
+  "source": "authored",
+  "fen": "rnbqkb1r/ppp1pp1p/6p1/3n4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 5",
+  "sideToMove": "w",
+  "solution": [
+   "e4"
+  ],
+  "explanation": "Gain a big center; the healthy pawn duo cramps Black."
+ },
+ {
+  "id": "S3-s16",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "break",
+  "source": "authored",
+  "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+  "sideToMove": "w",
+  "solution": [
+   "c4"
+  ],
+  "explanation": "The Panov break challenges d5 and fights for the initiative."
+ },
+ {
+  "id": "S3-s17",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "r1bqk1nr/pppp1ppp/2n5/2b5/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "Be3"
+  ],
+  "explanation": "Develop and bolster the d4-knight while keeping pawns sound."
+ },
+ {
+  "id": "S3-s18",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/5NP1/PP2PP1P/RNBQKB1R w KQkq - 1 5",
+  "sideToMove": "w",
+  "solution": [
+   "Bg2"
+  ],
+  "explanation": "Fianchetto to pressure d5 without conceding any pawn weaknesses."
+ },
+ {
+  "id": "S3-s19",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "break",
+  "source": "authored",
+  "fen": "r1bqkb1r/pp2pppp/2np1n2/2p5/4P3/2P2N2/PP1PBPPP/RNBQK2R w KQkq - 3 5",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ],
+  "explanation": "Support and play d4 to seize central space with a sound chain."
+ },
+ {
+  "id": "S3-s20",
+  "kind": "strategy",
+  "station": "S3",
+  "rung": "bronze",
+  "motif": "structure",
+  "source": "authored",
+  "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 2 5",
+  "sideToMove": "w",
+  "solution": [
+   "Bg3"
+  ],
+  "explanation": "Preserve the bishop and keep your kingside pawns unspoiled."
+ }
+]

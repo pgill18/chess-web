@@ -1,0 +1,2942 @@
+[
+ {
+  "id": "T7-g1",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "8/k1K5/8/8/8/6Q1/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa3#"
+  ]
+ },
+ {
+  "id": "T7-g2",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "2K5/k7/8/8/8/8/3Q4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa5#"
+  ]
+ },
+ {
+  "id": "T7-g3",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "7Q/8/8/8/8/7K/8/7k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa1#"
+  ]
+ },
+ {
+  "id": "T7-g4",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "8/8/4Q3/8/8/8/8/k1K5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa6#"
+  ]
+ },
+ {
+  "id": "T7-g5",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "8/6Q1/8/8/8/3K4/8/4k3 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qg1#"
+  ]
+ },
+ {
+  "id": "T7-g6",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "2k5/8/2K5/3Q4/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qg8#"
+  ]
+ },
+ {
+  "id": "T7-g7",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "8/1Q6/8/8/8/2K5/k7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qb2#"
+  ]
+ },
+ {
+  "id": "T7-g8",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "6k1/8/6K1/8/8/4Q3/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qe8#"
+  ]
+ },
+ {
+  "id": "T7-g9",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "k1KQ4/8/8/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa5#"
+  ]
+ },
+ {
+  "id": "T7-g10",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "6k1/8/6K1/8/8/8/7Q/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qb8#"
+  ]
+ },
+ {
+  "id": "T7-g11",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "5Q2/8/8/8/8/2K5/8/3k4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qf1#"
+  ]
+ },
+ {
+  "id": "T7-g12",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "6k1/8/6K1/8/8/5Q2/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa8#"
+  ]
+ },
+ {
+  "id": "T7-g13",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "8/1Q6/8/7k/5K2/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qh7#"
+  ]
+ },
+ {
+  "id": "T7-g14",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "bronze",
+  "motif": "queen-mate",
+  "source": "generated",
+  "fen": "4k3/8/3K4/8/8/8/Q7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qg8#"
+  ]
+ },
+ {
+  "id": "T7-g15",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "1RK5/8/8/8/k7/8/8/3R4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra1#"
+  ]
+ },
+ {
+  "id": "T7-g16",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/1k1K4/8/R3R3/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Reb2#"
+  ]
+ },
+ {
+  "id": "T7-g17",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "8/k4K2/8/8/5R2/8/1R6/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra4#"
+  ]
+ },
+ {
+  "id": "T7-g18",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "7k/1R6/8/R7/8/8/8/2K5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "T7-g19",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "6R1/8/K7/7k/8/1R6/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh3#"
+  ]
+ },
+ {
+  "id": "T7-g20",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "4k3/2K4R/8/8/8/8/1R6/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb8#"
+  ]
+ },
+ {
+  "id": "T7-g21",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "8/6R1/8/4K3/8/7k/8/1R6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh1#"
+  ]
+ },
+ {
+  "id": "T7-g22",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "8/K7/8/8/R7/8/5R2/3k4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra1#"
+  ]
+ },
+ {
+  "id": "T7-g23",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "1R6/8/6R1/8/k7/6K1/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra6#"
+  ]
+ },
+ {
+  "id": "T7-g24",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "8/3R4/8/8/8/8/2R1K3/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rd1#"
+  ]
+ },
+ {
+  "id": "T7-g25",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "3k4/1K6/8/4R3/8/5R2/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rd3#"
+  ]
+ },
+ {
+  "id": "T7-g26",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/8/2R3R1/5K2/7k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh3#"
+  ]
+ },
+ {
+  "id": "T7-g27",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "6R1/5K2/8/7k/8/8/R7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh2#"
+  ]
+ },
+ {
+  "id": "T7-g28",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "rook-mate",
+  "source": "generated",
+  "fen": "8/1R5K/2R5/8/8/8/8/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra6#"
+  ]
+ },
+ {
+  "id": "T7-g29",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "2k1K3/1ppp4/8/8/8/8/R7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "T7-g30",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "3k4/2ppp3/7R/8/8/8/8/1K6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "T7-g31",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "1k6/ppp5/8/8/8/8/8/2K2R2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf8#"
+  ]
+ },
+ {
+  "id": "T7-g32",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "2k5/1ppp4/8/1K6/8/7R/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "T7-g33",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "5k2/4ppp1/R7/6K1/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "T7-g34",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "1k6/ppp2K2/8/8/6R1/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg8#"
+  ]
+ },
+ {
+  "id": "T7-g35",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "3k4/R1ppp3/8/8/8/8/1K6/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "T7-g36",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "4k3/3ppp2/8/8/8/1R6/8/5K2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb8#"
+  ]
+ },
+ {
+  "id": "T7-g37",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "6k1/5ppp/1K6/8/8/R7/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "T7-g38",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "2k5/1ppp4/8/8/8/6K1/7R/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "T7-g39",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "2k5/1ppp4/8/8/7R/8/3K4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "T7-g40",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "6k1/2K2ppp/8/8/8/1R6/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb8#"
+  ]
+ },
+ {
+  "id": "T7-g41",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "3k4/2ppp3/8/8/3K3R/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "T7-g42",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "T7",
+  "rung": "silver",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "3k4/2ppp3/8/8/8/R7/8/1K6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "T8-g1",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/8/8/4Q3/K7/8/2k5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qe2"
+  ]
+ },
+ {
+  "id": "T8-g2",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/8/8/4Q3/k7/3K4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc2"
+  ]
+ },
+ {
+  "id": "T8-g3",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "2Q5/8/8/8/8/8/8/k2K4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc2"
+  ]
+ },
+ {
+  "id": "T8-g4",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "3Q4/8/8/8/8/K7/8/2k5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb3"
+  ]
+ },
+ {
+  "id": "T8-g5",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/2Q5/7k/8/5K2/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf4"
+  ]
+ },
+ {
+  "id": "T8-g6",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/4Q3/7k/8/6K1/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf5"
+  ]
+ },
+ {
+  "id": "T8-g7",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/8/8/1K5Q/8/8/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb3"
+  ]
+ },
+ {
+  "id": "T8-g8",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "6k1/8/8/5K2/8/8/8/3Q4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kg6"
+  ]
+ },
+ {
+  "id": "T8-g9",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/4K2k/8/8/Q7/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf7"
+  ]
+ },
+ {
+  "id": "T8-g10",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "3Q4/8/8/8/8/7K/8/5k2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qd2"
+  ]
+ },
+ {
+  "id": "T8-g11",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/8/6Q1/8/7K/8/5k2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qd2"
+  ]
+ },
+ {
+  "id": "T8-g12",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "2k5/8/8/2K5/8/3Q4/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb6"
+  ]
+ },
+ {
+  "id": "T8-g13",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "2Q5/8/8/8/8/8/3K4/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc2"
+  ]
+ },
+ {
+  "id": "T8-g14",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/1Q6/8/K7/8/8/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb3"
+  ]
+ },
+ {
+  "id": "T8-g15",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "2Q5/7k/8/6K1/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf6"
+  ]
+ },
+ {
+  "id": "T8-g16",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "k7/8/3KQ3/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc7"
+  ]
+ },
+ {
+  "id": "T8-g17",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "6Q1/8/8/4K3/7k/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf4"
+  ]
+ },
+ {
+  "id": "T8-g18",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/8/1Q6/7k/8/4K3/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf3"
+  ]
+ },
+ {
+  "id": "T8-g19",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/7k/4K3/8/5Q2/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf7"
+  ]
+ },
+ {
+  "id": "T8-g20",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "bronze",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/1Q6/8/8/3K4/8/k7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc3"
+  ]
+ },
+ {
+  "id": "T8-g21",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "6k1/8/8/8/8/3R3R/8/7K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rd7"
+  ]
+ },
+ {
+  "id": "T8-g22",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/3R4/k7/8/8/7K/4R3 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb1"
+  ]
+ },
+ {
+  "id": "T8-g23",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "k7/1R2R3/8/7K/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rbd7"
+  ]
+ },
+ {
+  "id": "T8-g24",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/k7/4R3/8/8/K7/8/2R5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb1"
+  ]
+ },
+ {
+  "id": "T8-g25",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/8/5R2/3k4/8/4R3/1K6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc2"
+  ]
+ },
+ {
+  "id": "T8-g26",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/7k/4R3/8/4KR2/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg4"
+  ]
+ },
+ {
+  "id": "T8-g27",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "6k1/8/4K3/8/8/1R6/4R3/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg2+"
+  ]
+ },
+ {
+  "id": "T8-g28",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/6k1/3R4/R7/8/8/8/1K6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra7+"
+  ]
+ },
+ {
+  "id": "T8-g29",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "2R5/8/4R3/3K3k/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg8"
+  ]
+ },
+ {
+  "id": "T8-g30",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/8/8/8/K5R1/3k4/1R6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb2+"
+  ]
+ },
+ {
+  "id": "T8-g31",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/2R5/8/8/8/2K5/7k/R7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg7"
+  ]
+ },
+ {
+  "id": "T8-g32",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/7K/8/6k1/1R6/7R/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf3"
+  ]
+ },
+ {
+  "id": "T8-g33",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/8/2k5/6R1/1K6/8/3R4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg6"
+  ]
+ },
+ {
+  "id": "T8-g34",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "6RK/8/8/8/8/2R5/8/1k6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg2"
+  ]
+ },
+ {
+  "id": "T8-g35",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/2K2R2/8/8/8/4R3/7k/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg7"
+  ]
+ },
+ {
+  "id": "T8-g36",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "R7/2R5/8/8/1k6/8/8/7K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb8+"
+  ]
+ },
+ {
+  "id": "T8-g37",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "6k1/2K5/8/7R/3R4/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rd7"
+  ]
+ },
+ {
+  "id": "T8-g38",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "6R1/8/7K/8/8/2R5/8/3k4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg2"
+  ]
+ },
+ {
+  "id": "T8-g39",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/3R4/1K5k/8/8/8/5R2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg1"
+  ]
+ },
+ {
+  "id": "T8-g40",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T8",
+  "rung": "silver",
+  "motif": "mate-in-2",
+  "source": "generated",
+  "fen": "8/8/8/2R2K2/8/3R4/7k/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rc2+"
+  ]
+ },
+ {
+  "id": "M1-g1",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "8/8/1K6/8/8/2R5/R7/6k1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rc1#"
+  ]
+ },
+ {
+  "id": "M1-g2",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "6R1/K7/8/8/8/8/5R2/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg1#"
+  ]
+ },
+ {
+  "id": "M1-g3",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "1R4K1/8/8/k7/8/8/8/2R5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra1#"
+  ]
+ },
+ {
+  "id": "M1-g4",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "1K5k/8/8/4R3/8/6R1/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh5#"
+  ]
+ },
+ {
+  "id": "M1-g5",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "8/3R4/8/8/8/2K5/5R2/1k6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rd1#"
+  ]
+ },
+ {
+  "id": "M1-g6",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "4R3/7K/8/8/8/8/5R2/7k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Re1#"
+  ]
+ },
+ {
+  "id": "M1-g7",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "8/1R6/R7/4k3/8/4K3/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb5#"
+  ]
+ },
+ {
+  "id": "M1-g8",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "8/8/8/R7/K5R1/8/8/7k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh5#"
+  ]
+ },
+ {
+  "id": "M1-g9",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "5k2/R7/8/8/8/8/2R4K/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rc8#"
+  ]
+ },
+ {
+  "id": "M1-g10",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "8/1R6/8/3R4/8/K7/8/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rd1#"
+  ]
+ },
+ {
+  "id": "M1-g11",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "8/8/8/8/K7/4R3/7R/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Re1#"
+  ]
+ },
+ {
+  "id": "M1-g12",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "k7/8/4K3/1R6/8/8/3R4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra2#"
+  ]
+ },
+ {
+  "id": "M1-g13",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "8/7k/1K6/6R1/4R3/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh4#"
+  ]
+ },
+ {
+  "id": "M1-g14",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "k7/5R2/3R4/8/5K2/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rd8#"
+  ]
+ },
+ {
+  "id": "M1-g15",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "1R6/5K2/7k/8/8/8/6R1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "M1-g16",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "6k1/4R3/8/3R4/8/1K6/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rd8#"
+  ]
+ },
+ {
+  "id": "M1-g17",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "7k/8/8/8/4R3/8/3K4/6R1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh4#"
+  ]
+ },
+ {
+  "id": "M1-g18",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "7k/8/8/8/8/6R1/2K1R3/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh2#"
+  ]
+ },
+ {
+  "id": "M1-g19",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "8/7R/4R3/k7/8/1K6/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh5#"
+  ]
+ },
+ {
+  "id": "M1-g20",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M1",
+  "rung": "bronze",
+  "motif": "two-rook-ladder",
+  "source": "generated",
+  "fen": "8/8/R7/8/3K4/8/1R6/7k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra1#"
+  ]
+ },
+ {
+  "id": "M2-g1",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/8/2K5/k7/8/7Q/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa2#"
+  ]
+ },
+ {
+  "id": "M2-g2",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/8/2K5/k7/2Q5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qb2#"
+  ]
+ },
+ {
+  "id": "M2-g3",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/5K1k/8/8/8/1Q6/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qh3#"
+  ]
+ },
+ {
+  "id": "M2-g4",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/5K2/7k/8/3Q4/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qh4#"
+  ]
+ },
+ {
+  "id": "M2-g5",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/8/8/1Q3K2/7k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qh8#"
+  ]
+ },
+ {
+  "id": "M2-g6",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "6Q1/8/8/8/8/8/2K5/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa8#"
+  ]
+ },
+ {
+  "id": "M2-g7",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/k1K5/4Q3/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa7#"
+  ]
+ },
+ {
+  "id": "M2-g8",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/8/2K5/7Q/3k4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qd2#"
+  ]
+ },
+ {
+  "id": "M2-g9",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/8/1K6/6Q1/2k5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qc2#"
+  ]
+ },
+ {
+  "id": "M2-g10",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "1Q6/8/8/5K2/7k/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qh2#"
+  ]
+ },
+ {
+  "id": "M2-g11",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/8/8/4QK2/7k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qh5#"
+  ]
+ },
+ {
+  "id": "M2-g12",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M2",
+  "rung": "bronze",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/k1K5/8/5Q2/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qa5#"
+  ]
+ },
+ {
+  "id": "M2-g13",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/k7/2K5/8/8/5Q2/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qf7"
+  ]
+ },
+ {
+  "id": "M2-g14",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "7k/8/8/6K1/8/8/8/2Q5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kg6"
+  ]
+ },
+ {
+  "id": "M2-g15",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "6K1/8/7k/3Q4/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf7"
+  ]
+ },
+ {
+  "id": "M2-g16",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/8/6K1/8/7k/Q7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf4"
+  ]
+ },
+ {
+  "id": "M2-g17",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "k7/8/8/2K5/8/3Q4/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb6"
+  ]
+ },
+ {
+  "id": "M2-g18",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "5k2/8/7K/8/8/7Q/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qd7"
+  ]
+ },
+ {
+  "id": "M2-g19",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "5K2/8/7k/8/8/8/8/6Q1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qg4"
+  ]
+ },
+ {
+  "id": "M2-g20",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "1k6/4Q3/3K4/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc6"
+  ]
+ },
+ {
+  "id": "M2-g21",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "6k1/8/8/Q5K1/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kg6"
+  ]
+ },
+ {
+  "id": "M2-g22",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M2",
+  "rung": "silver",
+  "motif": "kq-mate",
+  "source": "generated",
+  "fen": "8/8/Q7/8/8/K7/8/2k5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qe2"
+  ]
+ },
+ {
+  "id": "M3-g1",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "1R6/8/8/8/8/3K4/8/3k4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb1#"
+  ]
+ },
+ {
+  "id": "M3-g2",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "3k4/5R2/3K4/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf8#"
+  ]
+ },
+ {
+  "id": "M3-g3",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/6R1/8/5K1k/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh7#"
+  ]
+ },
+ {
+  "id": "M3-g4",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/5K1k/8/5R2/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh5#"
+  ]
+ },
+ {
+  "id": "M3-g5",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/8/8/R7/8/5K2/8/5k2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra1#"
+  ]
+ },
+ {
+  "id": "M3-g6",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/6R1/8/8/8/8/8/k1K5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra7#"
+  ]
+ },
+ {
+  "id": "M3-g7",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "4R3/8/8/8/8/k1K5/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "M3-g8",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "k1K5/8/8/8/8/8/8/4R3 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra1#"
+  ]
+ },
+ {
+  "id": "M3-g9",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "1R6/8/8/8/8/7K/8/7k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb1#"
+  ]
+ },
+ {
+  "id": "M3-g10",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/1R6/4K3/8/4k3 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb1#"
+  ]
+ },
+ {
+  "id": "M3-g11",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "7k/8/1R4K1/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb8#"
+  ]
+ },
+ {
+  "id": "M3-g12",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M3",
+  "rung": "bronze",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "k7/8/K1R5/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rc8#"
+  ]
+ },
+ {
+  "id": "M3-g13",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/6K1/3R4/8/7k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kg3"
+  ]
+ },
+ {
+  "id": "M3-g14",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "6k1/8/7K/R7/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf5"
+  ]
+ },
+ {
+  "id": "M3-g15",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "4k3/8/3K4/8/8/8/8/7R w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf1"
+  ]
+ },
+ {
+  "id": "M3-g16",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "1k6/8/2K5/8/8/8/3R4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra2"
+  ]
+ },
+ {
+  "id": "M3-g17",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "7k/8/4K3/8/8/4R3/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf7"
+  ]
+ },
+ {
+  "id": "M3-g18",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/1K6/5R2/8/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb3"
+  ]
+ },
+ {
+  "id": "M3-g19",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "k7/3K4/8/8/8/8/8/5R2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc7"
+  ]
+ },
+ {
+  "id": "M3-g20",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/8/8/3R4/2K5/8/8/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb3"
+  ]
+ },
+ {
+  "id": "M3-g21",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/7k/5K2/8/R7/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8"
+  ]
+ },
+ {
+  "id": "M3-g22",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M3",
+  "rung": "silver",
+  "motif": "kr-mate",
+  "source": "generated",
+  "fen": "8/8/8/5K2/7k/8/3R4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rd3"
+  ]
+ },
+ {
+  "id": "M4-g1",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "1k6/ppp5/8/1K6/8/8/5R2/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf8#"
+  ]
+ },
+ {
+  "id": "M4-g2",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "4k3/3ppp2/8/8/8/8/K7/7R w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "M4-g3",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "6k1/3K1ppp/8/8/8/R7/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "M4-g4",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "1k6/ppp5/4R3/8/8/8/7K/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Re8#"
+  ]
+ },
+ {
+  "id": "M4-g5",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "3k4/2ppp3/8/8/8/5R1K/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf8#"
+  ]
+ },
+ {
+  "id": "M4-g6",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "2k5/1ppp4/8/8/7R/8/4K3/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "M4-g7",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "3k4/2ppp3/8/8/8/3K4/8/7R w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "M4-g8",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "6k1/5ppp/R7/8/8/8/5K2/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "M4-g9",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "K2k4/2ppp3/7R/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "M4-g10",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "2k5/1ppp4/4R3/5K2/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Re8#"
+  ]
+ },
+ {
+  "id": "M4-g11",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "2k5/1ppp4/8/8/2K5/8/5R2/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf8#"
+  ]
+ },
+ {
+  "id": "M4-g12",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "6k1/2R2ppp/8/4K3/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rc8#"
+  ]
+ },
+ {
+  "id": "M4-g13",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "6k1/R4ppp/8/8/8/8/8/7K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra8#"
+  ]
+ },
+ {
+  "id": "M4-g14",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "2k5/1ppp1K2/8/8/8/8/7R/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "M4-g15",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "2k5/1ppp4/8/7R/8/8/8/2K5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "M4-g16",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "3k4/2ppp3/8/8/5K2/8/8/1R6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb8#"
+  ]
+ },
+ {
+  "id": "M4-g17",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "1k6/ppp5/8/5R2/8/8/4K3/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf8#"
+  ]
+ },
+ {
+  "id": "M4-g18",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "6k1/2R2ppp/8/8/8/8/8/K7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rc8#"
+  ]
+ },
+ {
+  "id": "M4-g19",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "1k6/ppp5/8/8/2K5/7R/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rh8#"
+  ]
+ },
+ {
+  "id": "M4-g20",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M4",
+  "rung": "bronze",
+  "motif": "back-rank",
+  "source": "generated",
+  "fen": "1k6/ppp5/8/4R3/8/8/K7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Re8#"
+  ]
+ },
+ {
+  "id": "M5-g1",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M5",
+  "rung": "bronze",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "2k5/8/2K5/8/8/5Q2/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qf8#"
+  ]
+ },
+ {
+  "id": "M5-g2",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M5",
+  "rung": "bronze",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "6k1/Q7/5K2/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qg7#"
+  ]
+ },
+ {
+  "id": "M5-g3",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M5",
+  "rung": "bronze",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/8/1Q6/8/8/8/5K1k/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qh6#"
+  ]
+ },
+ {
+  "id": "M5-g4",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M5",
+  "rung": "bronze",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/8/8/5K1k/8/Q7/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qh3#"
+  ]
+ },
+ {
+  "id": "M5-g5",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M5",
+  "rung": "bronze",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "4k3/8/3K4/8/8/8/8/6Q1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qg8#"
+  ]
+ },
+ {
+  "id": "M5-g6",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M5",
+  "rung": "bronze",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "1k6/8/1K6/2Q5/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qf8#"
+  ]
+ },
+ {
+  "id": "M5-g7",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M5",
+  "rung": "bronze",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "5K2/7k/8/Q7/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qh5#"
+  ]
+ },
+ {
+  "id": "M5-g8",
+  "kind": "mate",
+  "mateIn": 1,
+  "station": "M5",
+  "rung": "bronze",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "2k5/6Q1/3K4/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qc7#"
+  ]
+ },
+ {
+  "id": "M5-g9",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/8/Q7/4K2k/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf4"
+  ]
+ },
+ {
+  "id": "M5-g10",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/8/8/8/K7/8/6Q1/1k6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb3"
+  ]
+ },
+ {
+  "id": "M5-g11",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "4k3/Q7/6K1/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qc7"
+  ]
+ },
+ {
+  "id": "M5-g12",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/8/1Q6/5K2/8/7k/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qg1"
+  ]
+ },
+ {
+  "id": "M5-g13",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/8/4Q3/4K2k/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf4"
+  ]
+ },
+ {
+  "id": "M5-g14",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/8/8/4K2k/4Q3/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf6"
+  ]
+ },
+ {
+  "id": "M5-g15",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "4k3/8/8/3K4/8/8/1Q6/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ke6"
+  ]
+ },
+ {
+  "id": "M5-g16",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/8/7k/4K3/8/8/8/6Q1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kf6"
+  ]
+ },
+ {
+  "id": "M5-g17",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "3R4/8/8/1k6/8/5K2/8/2R5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb8+"
+  ]
+ },
+ {
+  "id": "M5-g18",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/8/8/6R1/8/7R/k3K3/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb5"
+  ]
+ },
+ {
+  "id": "M5-g19",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "2R5/8/8/k7/8/K6R/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb3"
+  ]
+ },
+ {
+  "id": "M5-g20",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "2K5/4k3/5R2/8/8/8/7R/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rhf2"
+  ]
+ },
+ {
+  "id": "M5-g21",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "8/3k4/1K5R/R7/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ra7+"
+  ]
+ },
+ {
+  "id": "M5-g22",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "M5",
+  "rung": "silver",
+  "motif": "punishment-mate",
+  "source": "generated",
+  "fen": "2K3k1/8/1R6/3R4/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb7"
+  ]
+ },
+ {
+  "id": "T6-g1",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "4Q3/k7/8/1r6/8/8/4R3/3K4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qxb5"
+  ]
+ },
+ {
+  "id": "T6-g2",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "8/7k/8/2R3r1/8/4K1Q1/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxg5"
+  ]
+ },
+ {
+  "id": "T6-g3",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "7k/2r5/8/2Q5/8/8/3R4/6K1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qxc7"
+  ]
+ },
+ {
+  "id": "T6-g4",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "8/8/8/1Q5R/8/3K4/1r6/6k1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qxb2"
+  ]
+ },
+ {
+  "id": "T6-g5",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "1k6/4r3/4R3/7Q/8/8/K7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxe7"
+  ]
+ },
+ {
+  "id": "T6-g6",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "5Rr1/8/8/7k/1K6/8/8/4Q3 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxg8"
+  ]
+ },
+ {
+  "id": "T6-g7",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "1r1R4/8/3Q4/k7/8/8/3K4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxb8"
+  ]
+ },
+ {
+  "id": "T6-g8",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "2K5/8/1k6/R7/8/8/8/Q3r3 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qxe1"
+  ]
+ },
+ {
+  "id": "T6-g9",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "2k5/7Q/6K1/8/8/3R4/8/3r4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxd1"
+  ]
+ },
+ {
+  "id": "T6-g10",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "7k/3r4/8/8/8/K7/1R6/3Q4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qxd7"
+  ]
+ },
+ {
+  "id": "T6-g11",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "6r1/7Q/5R2/8/8/8/2K5/6k1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qxg8+"
+  ]
+ },
+ {
+  "id": "T6-g12",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "8/7k/8/R7/6r1/2K5/6Q1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qxg4"
+  ]
+ },
+ {
+  "id": "T6-g13",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "3k4/4R2R/8/8/8/2K1b3/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxe3"
+  ]
+ },
+ {
+  "id": "T6-g14",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "5R2/8/8/8/2K5/4k3/5Rb1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxg2"
+  ]
+ },
+ {
+  "id": "T6-g15",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "KR6/8/2R1b3/k7/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxe6"
+  ]
+ },
+ {
+  "id": "T6-g16",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "k4b2/8/6R1/1K6/8/8/8/5R2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxf8+"
+  ]
+ },
+ {
+  "id": "T6-g17",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "8/6R1/6R1/8/8/4K3/6b1/5k2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxg2"
+  ]
+ },
+ {
+  "id": "T6-g18",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "8/8/8/3R4/b6R/2K5/8/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxa4+"
+  ]
+ },
+ {
+  "id": "T6-g19",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "1k6/4b3/2K5/8/7R/4R3/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxe7"
+  ]
+ },
+ {
+  "id": "T6-g20",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "8/1k6/8/8/8/8/2R5/Kb4R1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxb1+"
+  ]
+ },
+ {
+  "id": "T6-g21",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "8/8/1K6/7k/2b3R1/6R1/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rxc4"
+  ]
+ },
+ {
+  "id": "T6-g22",
+  "kind": "mate",
+  "mateIn": 2,
+  "station": "T6",
+  "rung": "silver",
+  "motif": "remove-defender",
+  "source": "generated",
+  "fen": "8/8/6R1/8/2bK4/k7/5R2/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxc4"
+  ]
+ }
+]

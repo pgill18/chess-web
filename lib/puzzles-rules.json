@@ -1,0 +1,1520 @@
+[
+ {
+  "id": "R3-r1",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "castle",
+  "station": "R3",
+  "rung": "bronze",
+  "motif": "castling",
+  "source": "generated",
+  "fen": "8/8/8/2k5/8/8/8/R3K3 w Q - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "O-O-O"
+  ]
+ },
+ {
+  "id": "R3-r2",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "castle",
+  "station": "R3",
+  "rung": "bronze",
+  "motif": "castling",
+  "source": "generated",
+  "fen": "8/5k2/8/8/8/8/8/4K2R w K - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "O-O+"
+  ]
+ },
+ {
+  "id": "R3-r3",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "castle",
+  "station": "R3",
+  "rung": "bronze",
+  "motif": "castling",
+  "source": "generated",
+  "fen": "1k6/8/8/8/8/8/8/R3K3 w Q - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "O-O-O"
+  ]
+ },
+ {
+  "id": "R3-r4",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "castle",
+  "station": "R3",
+  "rung": "bronze",
+  "motif": "castling",
+  "source": "generated",
+  "fen": "8/8/8/3k4/8/8/8/R3K3 w Q - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "O-O-O+"
+  ]
+ },
+ {
+  "id": "R3-r5",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "castle",
+  "station": "R3",
+  "rung": "bronze",
+  "motif": "castling",
+  "source": "generated",
+  "fen": "k7/8/8/8/8/8/8/4K2R w K - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "O-O"
+  ]
+ },
+ {
+  "id": "R3-r6",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "castle",
+  "station": "R3",
+  "rung": "bronze",
+  "motif": "castling",
+  "source": "generated",
+  "fen": "4k3/8/8/8/8/8/8/4K2R w K - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "O-O"
+  ]
+ },
+ {
+  "id": "R3-r7",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "castle",
+  "station": "R3",
+  "rung": "bronze",
+  "motif": "castling",
+  "source": "generated",
+  "fen": "8/8/8/4k3/8/8/8/4K2R w K - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "O-O"
+  ]
+ },
+ {
+  "id": "R3-r8",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "castle",
+  "station": "R3",
+  "rung": "bronze",
+  "motif": "castling",
+  "source": "generated",
+  "fen": "8/4k3/8/8/8/8/8/R3K3 w Q - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "O-O-O"
+  ]
+ },
+ {
+  "id": "R3-r9",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "ep",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "en-passant",
+  "source": "generated",
+  "fen": "8/8/6k1/3pP3/8/8/8/6K1 w - d6 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "exd6"
+  ]
+ },
+ {
+  "id": "R3-r10",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "ep",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "en-passant",
+  "source": "generated",
+  "fen": "8/8/2k5/4pP2/8/8/8/1K6 w - e6 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "fxe6"
+  ]
+ },
+ {
+  "id": "R3-r11",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "ep",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "en-passant",
+  "source": "generated",
+  "fen": "8/4k3/8/2Pp4/8/7K/8/8 w - d6 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "cxd6+"
+  ]
+ },
+ {
+  "id": "R3-r12",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "ep",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "en-passant",
+  "source": "generated",
+  "fen": "8/4k3/8/4Pp2/8/8/8/7K w - f6 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "exf6+"
+  ]
+ },
+ {
+  "id": "R3-r13",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "ep",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "en-passant",
+  "source": "generated",
+  "fen": "8/1k6/8/2Pp4/8/8/8/4K3 w - d6 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "cxd6"
+  ]
+ },
+ {
+  "id": "R3-r14",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "ep",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "en-passant",
+  "source": "generated",
+  "fen": "8/8/4k3/3pP3/8/8/2K5/8 w - d6 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "exd6"
+  ]
+ },
+ {
+  "id": "R3-r15",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "ep",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "en-passant",
+  "source": "generated",
+  "fen": "8/8/4k3/3pP3/8/8/6K1/8 w - d6 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "exd6"
+  ]
+ },
+ {
+  "id": "R3-r16",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "promotion",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "promotion",
+  "source": "generated",
+  "fen": "8/P7/8/6K1/8/8/8/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "a8=Q+"
+  ]
+ },
+ {
+  "id": "R3-r17",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "promotion",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "promotion",
+  "source": "generated",
+  "fen": "8/P7/8/7K/8/8/8/3k4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "a8=Q"
+  ]
+ },
+ {
+  "id": "R3-r18",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "promotion",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "promotion",
+  "source": "generated",
+  "fen": "8/4P3/7k/8/5K2/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "e8=Q"
+  ]
+ },
+ {
+  "id": "R3-r19",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "promotion",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "promotion",
+  "source": "generated",
+  "fen": "8/4P3/8/K7/8/k7/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "e8=Q"
+  ]
+ },
+ {
+  "id": "R3-r20",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "promotion",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "promotion",
+  "source": "generated",
+  "fen": "8/1P6/8/8/7k/8/6K1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "b8=Q"
+  ]
+ },
+ {
+  "id": "R3-r21",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "promotion",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "promotion",
+  "source": "generated",
+  "fen": "8/4P3/8/K7/4k3/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "e8=Q+"
+  ]
+ },
+ {
+  "id": "R3-r22",
+  "kind": "rule",
+  "ruleType": "legal-special",
+  "special": "promotion",
+  "station": "R3",
+  "rung": "silver",
+  "motif": "promotion",
+  "source": "generated",
+  "fen": "8/7P/8/5K2/8/1k6/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "h8=Q"
+  ]
+ },
+ {
+  "id": "R4-r1",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "1q6/K7/R7/7k/8/8/b7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxb8"
+  ]
+ },
+ {
+  "id": "R4-r2",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/8/k5q1/8/8/K6q/8/1q6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ka4"
+  ]
+ },
+ {
+  "id": "R4-r3",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/8/b4q2/8/q5k1/K7/8/1B6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxa4"
+  ]
+ },
+ {
+  "id": "R4-r4",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "6r1/8/7q/7K/8/8/8/1k6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxh6"
+  ]
+ },
+ {
+  "id": "R4-r5",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "6Bk/8/1q6/8/r7/8/8/1K4r1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc2"
+  ]
+ },
+ {
+  "id": "R4-r6",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "5KP1/7r/8/8/8/q2r4/8/1k6 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ke8"
+  ]
+ },
+ {
+  "id": "R4-r7",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/6q1/1n1P4/8/8/7k/2r5/K7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb1"
+  ]
+ },
+ {
+  "id": "R4-r8",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/8/8/q5r1/4k3/8/7r/7K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxh2"
+  ]
+ },
+ {
+  "id": "R4-r9",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/8/Kq6/3k4/8/3np3/3B4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxb6"
+  ]
+ },
+ {
+  "id": "R4-r10",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/8/8/7k/8/3r4/2K5/r1q5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxd3"
+  ]
+ },
+ {
+  "id": "R4-r11",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/2q5/k7/8/8/7K/6qB/7b w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kh4"
+  ]
+ },
+ {
+  "id": "R4-r12",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/8/8/8/2Rq2k1/5b2/8/7K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kh2"
+  ]
+ },
+ {
+  "id": "R4-r13",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "5q2/3K4/5p2/1k3q2/8/1N6/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kc7"
+  ]
+ },
+ {
+  "id": "R4-r14",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "p7/2Kq4/8/8/2Pq4/8/k7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb8"
+  ]
+ },
+ {
+  "id": "R4-r15",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/k7/N7/8/4K3/3q4/8/5q2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ke5"
+  ]
+ },
+ {
+  "id": "R4-r16",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "1b6/8/3K4/1qq5/8/8/3k4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ke6"
+  ]
+ },
+ {
+  "id": "R4-r17",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/4k1r1/8/8/8/Kq6/8/R7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxb3"
+  ]
+ },
+ {
+  "id": "R4-r18",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/n5r1/7K/8/8/4P2r/8/6k1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxg7"
+  ]
+ },
+ {
+  "id": "R4-r19",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "8/5b2/8/8/8/2r5/4q3/2K4k w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb1"
+  ]
+ },
+ {
+  "id": "R4-r20",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "2n5/8/8/4r3/4K3/6qk/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kd4"
+  ]
+ },
+ {
+  "id": "R4-r21",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "3k4/8/5K2/5q2/8/q4r2/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kg7"
+  ]
+ },
+ {
+  "id": "R4-r22",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R4",
+  "rung": "bronze",
+  "motif": "only-move-out-of-check",
+  "source": "generated",
+  "fen": "5K2/8/6k1/2q1q1n1/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kg8"
+  ]
+ },
+ {
+  "id": "R1-r1",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/3P4/7P/k7/8/7K/2b5/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "d8=Q+"
+  ]
+ },
+ {
+  "id": "R1-r2",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/3K4/8/8/1P6/4P2P/8/2k5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "h4"
+  ]
+ },
+ {
+  "id": "R1-r3",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/8/3PP3/2K5/5n1k/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "e7"
+  ]
+ },
+ {
+  "id": "R1-r4",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/1Pr5/5PK1/8/8/4Pk2/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "b8=B"
+  ]
+ },
+ {
+  "id": "R1-r5",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "3n4/5k2/8/8/7P/8/8/7K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "h5"
+  ]
+ },
+ {
+  "id": "R1-r6",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/1K6/8/3P3k/3n4/2P5/6P1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "c4"
+  ]
+ },
+ {
+  "id": "R1-r7",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "4r3/8/5K2/4P3/2P2k2/8/7P/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "h4"
+  ]
+ },
+ {
+  "id": "R1-r8",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/2P5/2k5/4K3/1P6/8/3P4/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "d4"
+  ]
+ },
+ {
+  "id": "R1-r9",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/8/8/8/8/8/P5P1/3k3K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "a4"
+  ]
+ },
+ {
+  "id": "R1-r10",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "5r2/8/4P3/8/8/4K3/8/3k4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "e7"
+  ]
+ },
+ {
+  "id": "R1-r11",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/5P2/4k3/8/4P3/4P3/5K2/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "f8=Q"
+  ]
+ },
+ {
+  "id": "R1-r12",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "4n3/8/6P1/8/5k2/8/PK6/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "a4"
+  ]
+ },
+ {
+  "id": "R1-r13",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/8/8/8/6k1/8/5P2/5K2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "f3+"
+  ]
+ },
+ {
+  "id": "R1-r14",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "k7/P7/8/P7/3P4/8/6K1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "d5"
+  ]
+ },
+ {
+  "id": "R1-r15",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/8/8/1P6/7K/1k1n4/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "b6"
+  ]
+ },
+ {
+  "id": "R1-r16",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/1PP5/8/8/1P6/1K6/6k1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "c8=N"
+  ]
+ },
+ {
+  "id": "R1-r17",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/8/2P5/4K3/4n1k1/8/1P6/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "b4"
+  ]
+ },
+ {
+  "id": "R1-r18",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "5k2/8/1K4P1/8/8/1P6/4P3/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "g7+"
+  ]
+ },
+ {
+  "id": "R1-r19",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "3k4/8/5K2/1P6/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "b6"
+  ]
+ },
+ {
+  "id": "R1-r20",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "p",
+  "station": "R1",
+  "rung": "bronze",
+  "motif": "pawn-move",
+  "source": "generated",
+  "fen": "8/3P4/8/7k/8/8/3rP1K1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "d8=Q"
+  ]
+ },
+ {
+  "id": "R2-r1",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "r",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "3bK3/8/8/4R3/8/7k/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rc5"
+  ]
+ },
+ {
+  "id": "R2-r2",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "b",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/8/8/6b1/8/8/8/4k1KB w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Bc6"
+  ]
+ },
+ {
+  "id": "R2-r3",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "b",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "5B2/k1K5/6r1/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Bc5+"
+  ]
+ },
+ {
+  "id": "R2-r4",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "n",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "1K6/5k2/8/8/8/8/8/5N2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ng3"
+  ]
+ },
+ {
+  "id": "R2-r5",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "b",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/8/6B1/8/k7/8/8/7K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Bb1"
+  ]
+ },
+ {
+  "id": "R2-r6",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "n",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/8/8/8/1N3kn1/8/8/K7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Nd5+"
+  ]
+ },
+ {
+  "id": "R2-r7",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "n",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/6K1/8/2N5/8/8/8/4k3 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ne4"
+  ]
+ },
+ {
+  "id": "R2-r8",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "r",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "3k4/8/8/8/R7/K2b4/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rb4"
+  ]
+ },
+ {
+  "id": "R2-r9",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "n",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/N7/8/8/3K4/8/4k3/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Nb5"
+  ]
+ },
+ {
+  "id": "R2-r10",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "q",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/8/7K/4k3/8/8/Q7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qd5+"
+  ]
+ },
+ {
+  "id": "R2-r11",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "b",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "B6K/p7/8/8/8/8/8/k7 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Bd5"
+  ]
+ },
+ {
+  "id": "R2-r12",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "q",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/8/8/8/8/7k/4K3/4Q3 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qd1"
+  ]
+ },
+ {
+  "id": "R2-r13",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "q",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "4Q3/8/8/8/8/1k5K/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qe4"
+  ]
+ },
+ {
+  "id": "R2-r14",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "r",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "7k/8/8/4Kp2/8/8/2R5/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rc8+"
+  ]
+ },
+ {
+  "id": "R2-r15",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "n",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/6N1/8/4k3/8/8/8/5K2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Nh5"
+  ]
+ },
+ {
+  "id": "R2-r16",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "r",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "5R2/1k6/8/6K1/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rf7+"
+  ]
+ },
+ {
+  "id": "R2-r17",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "b",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/3K4/8/8/6k1/2B5/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Bd2"
+  ]
+ },
+ {
+  "id": "R2-r18",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "r",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/4K3/8/1k6/8/8/2R5/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rc5+"
+  ]
+ },
+ {
+  "id": "R2-r19",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "r",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "8/2R5/8/1k6/8/8/nK6/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Rg7"
+  ]
+ },
+ {
+  "id": "R2-r20",
+  "kind": "rule",
+  "ruleType": "move-piece",
+  "pieceType": "q",
+  "station": "R2",
+  "rung": "bronze",
+  "motif": "piece-move",
+  "source": "generated",
+  "fen": "5K2/8/8/8/k7/5Q2/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Qb7"
+  ]
+ },
+ {
+  "id": "R5-r1",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "q2k4/3N4/8/8/8/q7/K7/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb1"
+  ]
+ },
+ {
+  "id": "R5-r2",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/6n1/8/6q1/4K3/3q4/8/2k5 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxd3"
+  ]
+ },
+ {
+  "id": "R5-r3",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "3bK1q1/8/8/8/7k/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kd7"
+  ]
+ },
+ {
+  "id": "R5-r4",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/7p/2k5/K7/8/8/r7/7n w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb4"
+  ]
+ },
+ {
+  "id": "R5-r5",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/8/8/5b2/5k2/1q6/2K5/3r4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxb3"
+  ]
+ },
+ {
+  "id": "R5-r6",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/p7/3k4/6qK/r7/8/5P2/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxg5"
+  ]
+ },
+ {
+  "id": "R5-r7",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "7K/5nq1/2P5/2r5/5k2/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxg7"
+  ]
+ },
+ {
+  "id": "R5-r8",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "4P3/2p5/2k5/8/8/8/6q1/7K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxg2"
+  ]
+ },
+ {
+  "id": "R5-r9",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/2q5/8/2k2qN1/8/5Kr1/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ke2"
+  ]
+ },
+ {
+  "id": "R5-r10",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/1P6/8/4p3/6Kr/8/5qk1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kg5"
+  ]
+ },
+ {
+  "id": "R5-r11",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/8/6k1/6p1/6K1/6q1/8/3n4 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxg3"
+  ]
+ },
+ {
+  "id": "R5-r12",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/6q1/8/8/r7/8/8/K5k1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb1"
+  ]
+ },
+ {
+  "id": "R5-r13",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/8/8/7q/6rK/k7/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxh5"
+  ]
+ },
+ {
+  "id": "R5-r14",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "Kq6/8/3k4/8/8/8/8/6r1 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxb8"
+  ]
+ },
+ {
+  "id": "R5-r15",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "6qK/8/7k/8/8/6P1/2q5/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kxg8"
+  ]
+ },
+ {
+  "id": "R5-r16",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/8/8/8/4k3/1q6/3b1q1K/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kh1"
+  ]
+ },
+ {
+  "id": "R5-r17",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "6b1/q5r1/K3k3/8/8/8/8/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kb5"
+  ]
+ },
+ {
+  "id": "R5-r18",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "6p1/8/8/8/7k/5r2/7q/5K2 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Ke1"
+  ]
+ },
+ {
+  "id": "R5-r19",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "6r1/7K/8/5q2/4k3/8/6r1/8 w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kh6"
+  ]
+ },
+ {
+  "id": "R5-r20",
+  "kind": "rule",
+  "ruleType": "only-move",
+  "station": "R5",
+  "rung": "silver",
+  "motif": "read-the-position",
+  "source": "generated",
+  "fen": "8/8/8/8/b2k4/5b2/8/2r4K w - - 0 1",
+  "sideToMove": "w",
+  "solution": [
+   "Kh2"
+  ]
+ }
+]

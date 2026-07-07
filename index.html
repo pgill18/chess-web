@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chess Gym</title>
+  <!-- ?v=N cache-busting on EVERY asset, from the first commit (no exceptions). Bump on any change. -->
+  <link rel="stylesheet" href="css/design.css?v=12" />
+</head>
+<body>
+  <header id="topbar">
+    <h1>Chess Gym</h1>
+    <nav>
+      <button data-view="map" class="nav active">Mastery Map</button>
+      <button data-view="play" class="nav">Play</button>
+      <button data-view="intake" class="nav">Intake</button>
+    </nav>
+    <span id="overall"></span>
+  </header>
+
+  <main id="app">
+    <div id="loading">Loading engine…</div>
+  </main>
+
+  <!-- CommonJS bridge, then plain view scripts (they read window.Lib after the engine loads). -->
+  <script src="js/loader.js?v=2"></script>
+  <script src="js/storage.js?v=4"></script>
+  <script src="js/board-view.js?v=2"></script>
+  <script src="js/map-view.js?v=3"></script>
+  <script src="js/play-view.js?v=3"></script>
+  <script src="js/intake-view.js?v=1"></script>
+  <script src="js/station-view.js?v=5"></script>
+  <script src="js/app.js?v=4"></script>
+  <script>
+    // Bootstrap: load lib/ verbatim (topological order), then hand the public API to the app.
+    var APP_VERSION = 5;
+    var LIB_JS = ['board', 'movegen', 'rng', 'mastery', 'game', 'ai', 'analysis', 'puzzle', 'puzzle-bank', 'intake', 'activity', 'index'];
+    var LIB_JSON = ['puzzles-generated', 'puzzles-tactics', 'puzzles-rules', 'puzzles-endgames', 'puzzles-strategy'];
+    // './lib' — a verbatim, checked mirror of the top-level lib/ (see scripts/sync-webapp-lib.js).
+    // NOT '../lib': the Level-3 publish tree is self-contained, no parent directory exists.
+    window.loadLib('./lib', LIB_JS, LIB_JSON, APP_VERSION).then(function (reg) {
+      window.Lib = reg.index;           // the public engine API (Chess, chooseMove, mastery, ...)
+      window.Lib.raw = reg;             // low-level modules if a view needs them
+      window.App.start();
+    }).catch(function (e) {
+      document.getElementById('app').innerHTML = '<div class="error">Failed to load engine: ' + e.message + '</div>';
+    });
+  </script>
+</body>
+</html>
