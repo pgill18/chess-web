@@ -3,10 +3,13 @@
 // same lib/ primitives as the CLI (chooseMoveAs, the character registry, roundRobinSteps/
 // knockoutSteps). A full tournament can take MINUTES (quiescence characters cost ~2-3s/move) —
 // running it as one giant synchronous call would freeze the tab, so the generator steps are
-// driven with a setTimeout(0) between games. Honest caveat: this yields BETWEEN games, so the UI
-// repaints and can be cancelled between them — a single game's own multi-second computation still
-// blocks briefly while it runs. That's a real, meaningful improvement over one multi-minute
-// freeze, not a claim of perfect responsiveness throughout.
+// driven with a setTimeout(0) between .next() calls. roundRobinSteps/knockoutSteps yield after
+// EVERY MOVE (not just after each game — an earlier version only yielded per-game, which meant a
+// single quiescence-vs-quiescence game's 30-90+s of search left the tab fully unresponsive for
+// its entire duration; see lib/tournament.js's playGameSteps). Honest caveat that still applies:
+// each individual move against a quiescence character is one atomic synchronous search
+// (~2-3s) — the tab can go a few seconds between repaints/cancel checks, same as the interactive
+// Play/Arena rival view already does, but it is never blocked for a whole game or the whole run.
 (function () {
   let root, g, rng, voiceRng, seed, char, charKey, selected, over, tournamentCancelled;
 
@@ -49,20 +52,22 @@
     });
   }
 
-  // Drives a generator (roundRobinSteps/knockoutSteps) one game at a time, yielding to the
-  // browser's render/input loop via setTimeout(0) between games rather than blocking straight
-  // through — see the file header note on what this does and doesn't guarantee.
-  function driveGenerator(gen, onStep, onDone) {
+  // Drives a generator (roundRobinSteps/knockoutSteps) one step at a time, yielding to the
+  // browser's render/input loop via setTimeout(0) between steps. Steps now come after EVERY
+  // MOVE ('ply' events), not just after each game — onProgress fires (and repaints) on those
+  // without spamming the log; onStep only fires for completed games, and onDone at the very end.
+  function driveGenerator(gen, onProgress, onStep, onDone) {
     if (tournamentCancelled) return;
     let result;
     try { result = gen.next(); } catch (e) { onStep('Error: ' + e.message); return; }
     if (result.done) return;
     const step = result.value;
     if (step.type === 'done') { onDone(step); return; }
-    if (step.bye) onStep('  ' + step.bye + ' advances on a bye');
+    if (step.type === 'ply') onProgress(step);
+    else if (step.bye) onStep('  ' + step.bye + ' advances on a bye');
     else onStep((step.round ? 'R' + step.round + ' ' : '') + step.white + ' vs ' + step.black + ': ' + step.result
       + (step.winner ? ' -> ' + step.winner + ' advances' : '') + '  (' + step.plies + ' plies)');
-    setTimeout(() => driveGenerator(gen, onStep, onDone), 0);
+    setTimeout(() => driveGenerator(gen, onProgress, onStep, onDone), 0);
   }
 
   function runTournament(participants, tseed) {
@@ -70,9 +75,19 @@
     tournamentCancelled = false;
     const logEl = document.getElementById('t-log');
     const lines = ['Round robin (seed ' + tseed + '): ' + participants.join(', '), ''];
-    function append(line) { lines.push(line); logEl.textContent = lines.join('\n'); logEl.scrollTop = logEl.scrollHeight; }
+    function render() { logEl.textContent = lines.join('\n') + (statusLine ? '\n' + statusLine : ''); logEl.scrollTop = logEl.scrollHeight; }
+    let statusLine = '';
+    function append(line) { lines.push(line); statusLine = ''; render(); }
+    // Fires after every move (playGameSteps yields per ply) — updates a single trailing status
+    // line in place rather than appending, so the log shows real-time progress within a game
+    // (the thing ada found never appeared before) without flooding it with 60+ lines per game.
+    function progress(step) {
+      statusLine = (step.round ? 'R' + step.round + ' ' : '') + step.white + ' vs ' + step.black
+        + (step.tiebreak ? ' (tiebreak)' : '') + ': move ' + step.plies + '…';
+      render();
+    }
     const rrGen = L.roundRobinSteps(participants, tseed);
-    driveGenerator(rrGen, append, (rrDone) => {
+    driveGenerator(rrGen, progress, append, (rrDone) => {
       append('');
       append('Standings:');
       rrDone.standings.forEach((s, i) => append('  ' + (i + 1) + '. ' + s.key + '  ' + s.points + 'pt  (' + s.wins + 'W-' + s.losses + 'L-' + s.draws + 'D)'));
@@ -80,7 +95,7 @@
       append('');
       append('Knockout (seeded): ' + seeded.join(' > '));
       const koGen = L.knockoutSteps(seeded, tseed);
-      driveGenerator(koGen, append, (koDone) => {
+      driveGenerator(koGen, progress, append, (koDone) => {
         append('');
         append('Champion: ' + koDone.champion);
       });
