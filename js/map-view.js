@@ -4,8 +4,14 @@
   // onOpen(stationId) is called when a station card is clicked/tapped — the map's only job is
   // to route there; Learn/Drill/Prove/test-out lives in StationView.
   function render(root, onOpen) {
-    const M = window.Lib.mastery;
+    const L = window.Lib;
+    const M = L.mastery;
     const state = window.Storage.load();
+    // Gated on the refresherNudge module (Settings > Gamification) — a different UI shape than
+    // the CLI's one text line (this drives a per-station visual light-state), but the same
+    // underlying toggle: when off, stations never show the "refresher" visual state.
+    const gset = window.Storage.loadGamification();
+    const refresherOn = L.isModuleEnabled(gset, 'refresherNudge');
     let html = '<div class="map">';
     for (const w of Object.keys(M.WING_WEIGHTS)) {
       const pct = M.wingPercent(state, w);
@@ -19,9 +25,12 @@
         const sp = M.stationPercent(state, s.id);
         const stStore = state.stations[s.id];
         const proved = !!(stStore && stStore.proved);
-        const refresher = M.refresherDue(state, s.id, new Date().toISOString());
+        const refresher = refresherOn && M.refresherDue(state, s.id, new Date().toISOString());
         // data-state for the design layer's light metaphor — no lock state (prereqs are soft, spec: never locked).
-        const dataState = proved ? 'mastered' : refresher ? 'refresher' : sp > 0 ? 'lit' : 'unlit';
+        // refresher must be checked BEFORE proved: refresherDue() only ever fires for an
+        // already-proved station, so if proved were checked first, 'refresher' would be
+        // unreachable dead code (faye's #75 finding, filed as #77).
+        const dataState = refresher ? 'refresher' : proved ? 'mastered' : sp > 0 ? 'lit' : 'unlit';
         html += '<div class="station' + (proved ? ' is-mastered' : '') + '" data-state="' + dataState + '" data-station="' + s.id + '" style="--pct:' + sp + '" role="button" tabindex="0" title="Open ' + s.id + ' — Learn / Drill / Prove">'
           + '<div class="srow"><span class="sid">' + s.id + '</span><span class="sname">' + s.name + '</span><span class="spct">' + sp + '%</span></div>'
           + '<div class="sbar"><div class="sfill" style="width:' + sp + '%"></div></div>'

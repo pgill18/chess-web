@@ -33,5 +33,16 @@
   function loadIntake() { try { const s = localStorage.getItem(INTAKE_KEY); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
   function saveIntake(result) { try { localStorage.setItem(INTAKE_KEY, JSON.stringify(result)); } catch (e) { /* ignore */ } }
 
-  window.Storage = { load, save, KEY, loadIntake, saveIntake, INTAKE_KEY };
+  // Gamification (Phase 5) settings — SEPARATE from the mastery state, same reasoning as intake:
+  // it's not part of the shape the CLI persists under data/users/*.json (that lives in
+  // data/settings/*.json there too). migrateGamificationSettings backfills any module added
+  // after a user's last save to its own registry default.
+  const GAMIFICATION_KEY = 'chessgym:gamification:default';
+  function loadGamification() {
+    try { const s = localStorage.getItem(GAMIFICATION_KEY); if (s) return window.Lib.migrateGamificationSettings(JSON.parse(s)); } catch (e) { /* fall through */ }
+    return window.Lib.newGamificationSettings();
+  }
+  function saveGamification(settings) { try { localStorage.setItem(GAMIFICATION_KEY, JSON.stringify(settings)); } catch (e) { /* quota/private mode */ } }
+
+  window.Storage = { load, save, KEY, loadIntake, saveIntake, INTAKE_KEY, loadGamification, saveGamification, GAMIFICATION_KEY };
 })();

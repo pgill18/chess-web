@@ -199,3 +199,63 @@ All three hooks in (motif chip span; `data-pass` + `--pct` on `.quiz-result`; th
   Prove/Submit/Begin/Mark-learned/Go-to-Map are brass and "← Map" is a quiet text link. (Exactly the
   ".section vs element-level selectors cancelling" trap — worth the extra verification pass.)
 - Cache-busters: `design.css?v=12`. Handed to esme for her quick follow-up look (the L3 gate).
+
+### Round 6 — cast identity + tournament + Settings>Gamification (ivy's combined pass, #—)
+Three undesigned surfaces built for Phase 4/5: Arena (train-vs-rival cast roster + tournament),
+Match (async correspondence), Settings > Gamification. Presentational only — I use existing hooks
+(`.cast-card[data-key]`, `.tournament-log`, `.module-row`) and add zero markup dependencies.
+
+**Point of view for the cast.** The four rivals are the *players who inhabit the hall*. The engine
+exposes each character's true archetype (ai.js weights): Rook grinds material, Vera storms space,
+Selene plays the long positional game, Talon hunts combinations. So each maps to the chess PIECE
+that embodies that archetype — not a random avatar:
+- **Rook "The Grinder"** → ♜ rook (endgame material, the piece that wins won endings)
+- **Vera "The Aggressor"** → ♛ queen (highest mobility weight 2.2, raw aggression/space)
+- **Selene "The Strategist"** → ♝ bishop (long diagonals = long-term positional pressure)
+- **Talon "The Tactician"** → ♞ knight (the fork piece; talon = claw = knight tactics)
+Each `.cast-card` is a **tournament player placard**: name in display font, the piece sigil as an
+engraved emblem top-right, the blurb as a scouting report. Discipline: the sigil sits DIM (slate)
+normally and **lights brass only when selected** — "the rival you've sat down across from." That
+reuses the hall's light-language in one restrained beat; the Map stays the signature, this doesn't
+compete. Unknown keys fall back to a pawn ♟ sigil, so a 5th character kai adds still looks right.
+
+**Tournament feed** (`.tournament-log` `<pre>`) → a **wall chart**: dark field, a brass rule down
+the left like a printed crosstable, mono/tabular so standings and the Champion line align. Can only
+style the whole block (plain text inside), but the content's own indentation carries the structure.
+
+**Settings > Gamification** → the hall's **switchboard**. Each module is a quiet felt row; the
+toggle is a custom **lamp switch** — cold slate OFF, brass-lit ON (the knob glows). "A module on is
+a lamp on" — the lightest possible echo of the Map, fitting for a settings screen. Same custom
+checkbox drives the tournament character multi-select.
+
+**Match (async)** reuses the play-wrap; new bits: `.match-setup` card, `.match-or` ruled divider,
+and the code `<textarea>` styled as the **correspondence card** (mono, dark field) — the postcard
+you mail your opponent. Also filled real gaps in the shared control system: number inputs and
+textareas now match the text-field style; `<hr>` is a brass hairline; setup labels are data-face.
+- Cache-busters this round: `design.css?v=13`.
+
+### Round 7 — esme's v13 review (signed off 3 of 4; 2 correct issues)
+- **Signed off outright:** tournament crosstable, Settings lamp-switch toggles (both OFF/ON states
+  unambiguous), Match correspondence card. Don't touch these.
+- **(2) Real regression — phone nav overflow.** Adding Match/Arena/Settings to the topbar pushed the
+  six nav pills to scrollWidth 520 > 390 viewport with no wrap, so "Settings" clipped off-screen and
+  the whole app got horizontal scroll. **Fixed (CSS, mine):** at ≤620px the nav takes its own
+  full-width row (`order:2; width:100%; flex-wrap:wrap`) and pills wrap + tighten. Verified at 390px:
+  body.scrollWidth 390 == viewport (no h-scroll), Settings fully in view, wraps to two tidy rows.
+  `design.css?v=14`.
+- **(1) The signature beat doesn't paint.** arena-view.js's card click adds `.is-selected` (my 250ms
+  sigil→brass transition) then calls `startGame()` synchronously same-tick → render() replaces the DOM
+  before any paint, so the lit-sigil frame never shows. esme confirmed by clicking Vera. **Root cause
+  is real; fix is a ~220ms paint-yield (setTimeout) before startGame** — but that's control-flow inside
+  kai's view script, not CSS. Requested the exact one-liner from kai (offered to do it myself). Once
+  arena-view.js bumps, verify the lit frame renders, then esme's fast re-check. Boundary note for next
+  time: a CSS transition that fires right before a synchronous DOM-replace can't be trusted to paint —
+  the interaction needs a JS yield, which lives in the view script, so design the beat WITH the script
+  owner rather than assuming CSS alone delivers it.
+- **Resolved:** kai landed the 220ms paint-yield (arena-view.js?v=4). Verified two ways: (a) timing —
+  clicked a card, sampled mid-flow: sigil goes dim rgb(60,81,71)→rgb(178,149,74) (brass, mid-rise)
+  while the roster is still on screen at 120ms, then the game loads ~220ms; (b) visual — a selected
+  card's sigil glows brass with its brass edge, others dim. The dim→kindle→board beat now paints.
+  Handed the final Arena-only check to esme. Note: hit a port collision (8031 was already serving a
+  different app, "Times Table Gym", and returned HTTP 200) — always confirm the served <title> is
+  "Chess Gym" before trusting a port.

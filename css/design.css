@@ -262,23 +262,46 @@ body {
   transition: border-color .2s, background .2s, color .2s;
 }
 #app button:hover, #app select:hover { border-color: var(--brass); color: #fff; }
-#app input[type="text"] {
-  font: 500 14px/1 var(--font-data);
+#app input[type="text"], #app input[type="number"], #app textarea {
+  font: 500 14px/1.5 var(--font-data);
   background: #12201a; color: var(--buff);
   border: 1px solid var(--hair); border-radius: 8px; padding: 10px 12px; min-width: 0;
   transition: border-color .2s;
 }
-#app input[type="text"]::placeholder { color: #6f8579; }
-#app input[type="text"]:focus-visible { border-color: var(--brass); outline: none; }
+#app input[type="text"]::placeholder, #app textarea::placeholder { color: #6f8579; }
+#app input[type="text"]:focus-visible,
+#app input[type="number"]:focus-visible,
+#app textarea:focus-visible { border-color: var(--brass); outline: none; }
+
+/* Lamp switch — a custom checkbox that reads as a hall light coming on (Settings modules +
+   tournament character picks). OFF: cold slate. ON: brass-lit, the knob glowing. */
+#app input[type="checkbox"] {
+  appearance: none; -webkit-appearance: none; flex: none; margin: 0;
+  width: 40px; height: 22px; border-radius: 999px; position: relative; cursor: pointer;
+  background: var(--lamp-cold); border: 1px solid var(--hair);
+  transition: background .22s, border-color .22s;
+}
+#app input[type="checkbox"]::after {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px;
+  border-radius: 50%; background: #6f8579;
+  transition: transform .22s cubic-bezier(.2,.7,.2,1), background .22s, box-shadow .22s;
+}
+#app input[type="checkbox"]:checked {
+  background: linear-gradient(90deg, #9a8848, var(--brass)); border-color: #d8b662;
+}
+#app input[type="checkbox"]:checked::after {
+  transform: translateX(18px); background: #17231c; box-shadow: 0 0 9px #c9a24baa;
+}
 
 /* forward CTAs get a brass fill with dark, high-contrast text.
    Scoped under #app so they out-specify the `#app button` base (which is 1,0,1). */
-#app #submit, #app #begin, #app #continue, #app #done, #app .actions [data-act="prove"] {
+#app #submit, #app #begin, #app #continue, #app #done, #app .actions [data-act="prove"],
+#app #t-run, #app #m-new {
   background: linear-gradient(160deg, #d8b662, #b6923e);
   color: #17231c; border-color: #d8b662; font-weight: 700;
 }
 #app #submit:hover, #app #begin:hover, #app #continue:hover, #app #done:hover,
-#app .actions [data-act="prove"]:hover {
+#app .actions [data-act="prove"]:hover, #app #t-run:hover, #app #m-new:hover {
   color: #0d1712; border-color: var(--buff);
 }
 
@@ -403,16 +426,124 @@ body {
 .intake-intro button, .intake-done button { margin-right: 8px; }
 .intake-item { max-width: 560px; }
 
+/* ================================================================
+   ARENA · MATCH · SETTINGS — the cast, the tournament hall, the switchboard
+   ================================================================ */
+
+/* Shared setup-screen chrome (headings, intro copy, labels, dividers) */
+.arena-setup, .match-setup, .settings-view { max-width: 880px; }
+.arena-setup h2, .match-setup h2, .settings-view h2 {
+  margin: 6px 0 6px; font: 600 22px/1.15 var(--font-display); letter-spacing: .03em; color: var(--buff);
+}
+.arena-setup > p, .match-setup > p, .settings-view > p {
+  margin: 0 0 18px; max-width: 62ch; color: var(--chalk); font: 400 14px/1.55 var(--font-body);
+}
+.arena-setup hr { border: none; border-top: 1px solid var(--brass); opacity: .38; margin: 30px 0 18px; }
+.arena-setup label, .match-setup label {
+  font: 500 12px/1.7 var(--font-data); letter-spacing: .04em; color: var(--chalk);
+}
+.arena-setup > label { display: inline-block; margin: 0 16px 14px 0; }
+.match-setup label { display: block; margin: 0 0 10px; }
+
+/* ---- The cast: tournament player placards ----
+   Each rival maps to the chess piece that embodies its engine archetype (see DESIGN-NOTES).
+   Sigil sits dim; it lights brass only when you're seated across from that rival (.is-selected). */
+.cast-roster {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+  gap: 12px; margin: 8px 0 20px;
+}
+.cast-card {
+  position: relative; overflow: hidden; cursor: pointer;
+  background: linear-gradient(180deg, var(--felt), #182a22);
+  border: 1px solid var(--hair); border-radius: var(--r); padding: 15px 16px 16px;
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+}
+.cast-card:hover { transform: translateY(-2px); border-color: #ffffff2e; }
+.cast-card h3 {
+  margin: 0 0 7px; padding-right: 32px;
+  font: 600 16px/1.2 var(--font-display); letter-spacing: .02em; color: var(--buff);
+}
+.cast-card p { margin: 0; font: 400 12.5px/1.5 var(--font-body); color: var(--chalk); }
+.cast-card::before {
+  content: "\265F"; /* default sigil: pawn (a cast member we don't have a piece for yet) */
+  position: absolute; top: 12px; right: 15px; font-size: 25px; line-height: 1; color: #3c5147;
+  transition: color .25s, text-shadow .25s;
+}
+.cast-card[data-key="rook"]::before   { content: "\265C"; } /* ♜ material grinder */
+.cast-card[data-key="vera"]::before   { content: "\265B"; } /* ♛ aggression / space */
+.cast-card[data-key="selene"]::before { content: "\265D"; } /* ♝ long-term positional */
+.cast-card[data-key="talon"]::before  { content: "\265E"; } /* ♞ tactics / forks */
+.cast-card.is-selected {
+  border-color: var(--brass);
+  box-shadow: inset 0 0 0 1px #c9a24b55, 0 10px 30px -14px #c9a24baa;
+}
+.cast-card.is-selected::before { color: var(--brass); text-shadow: 0 0 11px #c9a24b99; }
+
+#a-record { margin: 4px 0 10px; font: 500 13px/1.5 var(--font-data); color: var(--chalk); }
+#a-record:empty { display: none; }
+
+/* opponent header on the play board ("vs Vera …") */
+.play-side h3 { margin: 0 0 10px; font: 600 17px/1.2 var(--font-display); letter-spacing: .03em; color: var(--buff); }
+
+/* Tournament character multi-select — chips with the lamp-switch toggle */
+.cast-checks { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 8px 0 16px; }
+.cast-checks label {
+  display: inline-flex; align-items: center; gap: 9px;
+  font: 500 13px/1 var(--font-body); color: var(--buff); cursor: pointer;
+}
+
+/* Tournament feed — a printed wall chart / crosstable. Whole-block styling only (plain text
+   inside); the content's own indentation carries standings + the Champion line. */
+.tournament-log {
+  margin: 14px 0 0; padding: 16px 18px; max-height: 400px; overflow: auto;
+  background: #12201a; border: 1px solid var(--hair); border-left: 3px solid var(--brass);
+  border-radius: 8px; tab-size: 2;
+  font: 500 12.5px/1.75 var(--font-data); color: var(--buff);
+  white-space: pre-wrap; word-break: break-word; font-variant-numeric: tabular-nums;
+}
+.tournament-log:empty { display: none; }
+
+/* ---- Match (async correspondence) ---- */
+.match-or {
+  display: flex; align-items: center; gap: 12px; margin: 16px 0;
+  font: 600 11px/1 var(--font-data); letter-spacing: .18em; text-transform: uppercase; color: var(--chalk);
+}
+.match-or::before, .match-or::after { content: ""; flex: 1; height: 1px; background: var(--hair); }
+.match-setup #m-error:empty, #app #m-error:empty { display: none; }
+.match-setup #m-error, #app #m-error { margin-top: 10px; }
+/* the match code IS the game — styled as the correspondence card you mail your opponent */
+#app #m-current-code { height: 4.5em; resize: vertical; color: var(--brass); line-height: 1.5; }
+
+/* ---- Settings > Gamification: the hall switchboard ---- */
+.module-list { display: grid; gap: 10px; margin-top: 8px; }
+.module-row {
+  background: linear-gradient(180deg, var(--felt), #182a22);
+  border: 1px solid var(--hair); border-radius: 10px; padding: 14px 16px;
+  transition: border-color .2s;
+}
+.module-row:hover { border-color: #ffffff24; }
+.module-toggle { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.module-name { font: 600 14px/1.2 var(--font-display); letter-spacing: .03em; color: var(--buff); }
+.module-desc { margin: 9px 0 0; font: 400 13px/1.5 var(--font-body); color: var(--chalk); }
+
 @media (prefers-reduced-motion: reduce) {
+  .cast-card, #app input[type="checkbox"], #app input[type="checkbox"]::after { transition: none; }
   .quiz-result, .quiz-result[data-pass="true"]::before { animation: none; }
 }
 
 @media (max-width: 620px) {
-  #topbar { gap: 12px; flex-wrap: wrap; }
-  #topbar h1 { font-size: 17px; }
+  #topbar { gap: 10px 12px; flex-wrap: wrap; }
+  #topbar h1 { font-size: 17px; order: 1; }
+  /* six nav pills overflow a phone in one row — give nav its own full-width row and let the
+     pills wrap, so every view stays reachable (no horizontal scroll / clipped "Settings"). */
+  #topbar nav { order: 2; width: 100%; flex-wrap: wrap; gap: 6px; }
+  .nav { padding: 7px 11px; letter-spacing: .08em; }
   #overall { width: 100%; margin-left: 0; order: 3; }
   .board { width: min(92vw, 460px); }
   .play-wrap { gap: 16px; }
   .station-detail h2 { font-size: 21px; }
   .quiz-item > p { font-size: 15px; }
+  .cast-roster { grid-template-columns: 1fr; }
+  .arena-setup h2, .match-setup h2, .settings-view h2 { font-size: 19px; }
+  .arena-setup > label { display: block; margin-right: 0; }
 }

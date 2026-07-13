@@ -13,6 +13,9 @@
     document.querySelectorAll('.nav').forEach((b) => b.classList.toggle('active', b.dataset.view === view));
     const root = document.getElementById('app');
     if (view === 'play') window.PlayView.start(root);
+    else if (view === 'match') window.MatchView.start(root);
+    else if (view === 'arena') window.ArenaView.start(root);
+    else if (view === 'settings') window.SettingsView.render(root);
     else if (view === 'intake') {
       window.IntakeView.start(root, (result) => {
         // A skip (result === null) still marks intake "offered" so it doesn't re-prompt every load.
