@@ -6,10 +6,13 @@
 // driven with a setTimeout(0) between .next() calls. roundRobinSteps/knockoutSteps yield after
 // EVERY MOVE (not just after each game — an earlier version only yielded per-game, which meant a
 // single quiescence-vs-quiescence game's 30-90+s of search left the tab fully unresponsive for
-// its entire duration; see lib/tournament.js's playGameSteps). Honest caveat that still applies:
-// each individual move against a quiescence character is one atomic synchronous search
-// (~2-3s) — the tab can go a few seconds between repaints/cancel checks, same as the interactive
-// Play/Arena rival view already does, but it is never blocked for a whole game or the whole run.
+// its entire duration; see lib/tournament.js's playGameSteps). Known limitation that still
+// applies (PRODUCT-SPEC.md §10, task #86/#93/#95): each individual move against a quiescence
+// character is one atomic synchronous search (~2-3s), and in practice real clicks can go unheard
+// for the whole run (~3min for 4 rivals), not just briefly between moves — a real fix needs the
+// search off the main thread (Web Worker, filed as maintain-mode task #95). The UI copy below is
+// deliberately honest about this rather than promising responsiveness the current fix doesn't
+// fully deliver: it always finishes correctly with no data loss, so the guidance is "wait it out."
 (function () {
   let root, g, rng, voiceRng, seed, char, charKey, selected, over, tournamentCancelled;
 
@@ -26,7 +29,8 @@
       + '<label>Seed <input type="number" id="a-seed" value="' + ((Date.now() & 0x7fffffff) || 1) + '" /></label>'
       + '<div id="a-record"></div>'
       + '<hr /><h2>Tournament</h2>'
-      + '<p>Round robin (everyone plays everyone once) then a knockout seeded by the standings. Games can take a while — a progress log appears below once you start.</p>'
+      + '<p>Round robin (everyone plays everyone once) then a knockout seeded by the standings. This can take several minutes (longer with more rivals) — '
+      + '<strong>the page may not respond to clicks while it runs.</strong> It always finishes correctly with no data lost; please wait rather than reloading or navigating away.</p>'
       + '<div class="cast-checks">' + cast.map((c) => '<label><input type="checkbox" class="t-pick" value="' + c.key + '" checked /> ' + c.name + '</label>').join(' ') + '</div>'
       + '<label>Tournament seed <input type="number" id="t-seed" value="' + ((Date.now() & 0x7fffffff) || 1) + '" /></label>'
       + '<button id="t-run">Run tournament</button>'
@@ -47,8 +51,17 @@
     document.getElementById('t-run').addEventListener('click', () => {
       const picks = Array.from(root.querySelectorAll('.t-pick:checked')).map((cb) => cb.value);
       const tseed = parseInt(document.getElementById('t-seed').value, 10) || 1;
-      if (picks.length < 2) { document.getElementById('t-log').textContent = 'Pick at least 2 characters.'; return; }
-      runTournament(picks, tseed);
+      const runBtn = document.getElementById('t-run');
+      const logEl = document.getElementById('t-log');
+      if (picks.length < 2) { logEl.textContent = 'Pick at least 2 characters.'; return; }
+      // Paint a visible "starting" state BEFORE the first (possibly blocking) generator step
+      // runs, so something happens immediately on click rather than an apparent freeze with no
+      // feedback at all — the button disables in the same paint so a double-click can't start a
+      // second overlapping run. Deferred one tick via setTimeout(0) to let the browser actually
+      // repaint before runTournament's first synchronous chunk begins.
+      runBtn.disabled = true;
+      logEl.textContent = 'Starting… this can take several minutes and the page may not respond to clicks meanwhile — it will finish correctly, please wait.';
+      setTimeout(() => runTournament(picks, tseed, runBtn), 0);
     });
   }
 
@@ -70,7 +83,7 @@
     setTimeout(() => driveGenerator(gen, onProgress, onStep, onDone), 0);
   }
 
-  function runTournament(participants, tseed) {
+  function runTournament(participants, tseed, runBtn) {
     const L = window.Lib;
     tournamentCancelled = false;
     const logEl = document.getElementById('t-log');
@@ -98,6 +111,7 @@
       driveGenerator(koGen, progress, append, (koDone) => {
         append('');
         append('Champion: ' + koDone.champion);
+        if (runBtn) runBtn.disabled = false;
       });
     });
   }
