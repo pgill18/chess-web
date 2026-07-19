@@ -39,6 +39,10 @@
     return registry;
   }
 
-  window.loadLib = loadLib;
-  window.__libRegistry = registry;
+  // `self`, not `window`: on the main thread self === window (so this is a zero-behavior-change
+  // rename there), but inside a Web Worker there is no `window` — `self` is the global. This lets
+  // the off-main-thread compute worker (task #95) importScripts this same loader verbatim and call
+  // loadLib to load lib/ exactly as the main thread does, keeping one engine, one loader, no fork.
+  self.loadLib = loadLib;
+  self.__libRegistry = registry;
 })();

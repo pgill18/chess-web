@@ -1,24 +1,39 @@
 'use strict';
 // Arena (Phase 4): named AI cast roster, train-vs-rival, and tournaments — in-browser. Reuses the
 // same lib/ primitives as the CLI (chooseMoveAs, the character registry, roundRobinSteps/
-// knockoutSteps). A full tournament can take MINUTES (quiescence characters cost ~2-3s/move) —
-// running it as one giant synchronous call would freeze the tab, so the generator steps are
-// driven with a setTimeout(0) between .next() calls. roundRobinSteps/knockoutSteps yield after
-// EVERY MOVE (not just after each game — an earlier version only yielded per-game, which meant a
-// single quiescence-vs-quiescence game's 30-90+s of search left the tab fully unresponsive for
-// its entire duration; see lib/tournament.js's playGameSteps). Known limitation that still
-// applies (PRODUCT-SPEC.md §10, task #86/#93/#95): each individual move against a quiescence
-// character is one atomic synchronous search (~2-3s), and in practice real clicks can go unheard
-// for the whole run (~3min for 4 rivals), not just briefly between moves — a real fix needs the
-// search off the main thread (Web Worker, filed as maintain-mode task #95). The UI copy below is
-// deliberately honest about this rather than promising responsiveness the current fix doesn't
-// fully deliver: it always finishes correctly with no data loss, so the guidance is "wait it out."
+// knockoutSteps). A full tournament can take MINUTES (quiescence characters cost ~2-3s/move), so
+// tournaments run OFF the main thread in a Web Worker (engine-worker.js, task #95 / Skyline Phase
+// 0): the worker runs the whole RR→KO sequence and streams step messages back, so the tab stays
+// fully responsive throughout (verified by faye's live pass — real clicks instant across a ~6.5min
+// 4-rival run) and the log updates live. Determinism is unchanged: the worker runs the same lib
+// generators with the same seed, so a seed replays byte-identical whether run in the worker, the
+// in-thread fallback, or the CLI (verified byte-identical webapp-worker vs CLI at seed 424242).
+// When Worker is unavailable (very old browser) runTournament falls back to driving the same
+// generators in-thread via setTimeout(0) — that path DOES block the tab, but still completes
+// correctly; both paths share one formatter so their output can't diverge.
+//
+// (Note: the single-game rival play below still searches on the main thread — one ~2-3s move at a
+// time, same as the Play view, which was never the freeze; off-threading it would need serializing
+// mulberry32 state across postMessage, deliberately deferred.)
 (function () {
-  let root, g, rng, voiceRng, seed, char, charKey, selected, over, tournamentCancelled;
+  let root, g, rng, voiceRng, seed, char, charKey, selected, over, tournamentCancelled, activeWorker;
 
   function start(container) { root = container; showSetup(); }
 
+  // One completed-game / bye result line, formatted identically whether the step arrived from the
+  // in-thread generator (fallback) or streamed from the worker — one formatter, no divergence.
+  function stepLine(step) {
+    if (step.bye) return '  ' + step.bye + ' advances on a bye';
+    return (step.round ? 'R' + step.round + ' ' : '') + step.white + ' vs ' + step.black + ': ' + step.result
+      + (step.winner ? ' -> ' + step.winner + ' advances' : '') + '  (' + step.plies + ' plies)';
+  }
+
+  // Terminate any tournament worker still running (leaving the view / starting a new run) so a
+  // long search can't outlive the UI that spawned it.
+  function stopWorker() { if (activeWorker) { activeWorker.terminate(); activeWorker = null; } }
+
   function showSetup() {
+    stopWorker();
     const L = window.Lib;
     const cast = L.listCharacters();
     root.innerHTML = '<div class="arena-setup">'
@@ -29,8 +44,8 @@
       + '<label>Seed <input type="number" id="a-seed" value="' + ((Date.now() & 0x7fffffff) || 1) + '" /></label>'
       + '<div id="a-record"></div>'
       + '<hr /><h2>Tournament</h2>'
-      + '<p>Round robin (everyone plays everyone once) then a knockout seeded by the standings. This can take several minutes (longer with more rivals) — '
-      + '<strong>the page may not respond to clicks while it runs.</strong> It always finishes correctly with no data lost; please wait rather than reloading or navigating away.</p>'
+      + '<p>Round robin (everyone plays everyone once) then a knockout seeded by the standings. Games run in the background, so '
+      + '<strong>the page stays responsive</strong> and the log updates live as they play out — a full tournament can still take several minutes (longer with more rivals), but you can keep using the app while it runs.</p>'
       + '<div class="cast-checks">' + cast.map((c) => '<label><input type="checkbox" class="t-pick" value="' + c.key + '" checked /> ' + c.name + '</label>').join(' ') + '</div>'
       + '<label>Tournament seed <input type="number" id="t-seed" value="' + ((Date.now() & 0x7fffffff) || 1) + '" /></label>'
       + '<button id="t-run">Run tournament</button>'
@@ -54,13 +69,11 @@
       const runBtn = document.getElementById('t-run');
       const logEl = document.getElementById('t-log');
       if (picks.length < 2) { logEl.textContent = 'Pick at least 2 characters.'; return; }
-      // Paint a visible "starting" state BEFORE the first (possibly blocking) generator step
-      // runs, so something happens immediately on click rather than an apparent freeze with no
-      // feedback at all — the button disables in the same paint so a double-click can't start a
-      // second overlapping run. Deferred one tick via setTimeout(0) to let the browser actually
-      // repaint before runTournament's first synchronous chunk begins.
+      // Paint a visible "starting" state immediately on click (and disable the button in the same
+      // paint so a double-click can't launch a second overlapping run), deferred one tick so the
+      // browser repaints before runTournament kicks off the worker.
       runBtn.disabled = true;
-      logEl.textContent = 'Starting… this can take several minutes and the page may not respond to clicks meanwhile — it will finish correctly, please wait.';
+      logEl.textContent = 'Starting… games run in the background — the page stays responsive and the log updates live. This can take a few minutes.';
       setTimeout(() => runTournament(picks, tseed, runBtn), 0);
     });
   }
@@ -77,19 +90,18 @@
     const step = result.value;
     if (step.type === 'done') { onDone(step); return; }
     if (step.type === 'ply') onProgress(step);
-    else if (step.bye) onStep('  ' + step.bye + ' advances on a bye');
-    else onStep((step.round ? 'R' + step.round + ' ' : '') + step.white + ' vs ' + step.black + ': ' + step.result
-      + (step.winner ? ' -> ' + step.winner + ' advances' : '') + '  (' + step.plies + ' plies)');
+    else onStep(stepLine(step)); // one shared formatter (stepLine handles bye + game) — genuinely no divergence with the worker path now (otis #95 nit)
     setTimeout(() => driveGenerator(gen, onProgress, onStep, onDone), 0);
   }
 
   function runTournament(participants, tseed, runBtn) {
     const L = window.Lib;
     tournamentCancelled = false;
+    stopWorker();
     const logEl = document.getElementById('t-log');
     const lines = ['Round robin (seed ' + tseed + '): ' + participants.join(', '), ''];
-    function render() { logEl.textContent = lines.join('\n') + (statusLine ? '\n' + statusLine : ''); logEl.scrollTop = logEl.scrollHeight; }
     let statusLine = '';
+    function render() { logEl.textContent = lines.join('\n') + (statusLine ? '\n' + statusLine : ''); logEl.scrollTop = logEl.scrollHeight; }
     function append(line) { lines.push(line); statusLine = ''; render(); }
     // Fires after every move (playGameSteps yields per ply) — updates a single trailing status
     // line in place rather than appending, so the log shows real-time progress within a game
@@ -99,20 +111,46 @@
         + (step.tiebreak ? ' (tiebreak)' : '') + ': move ' + step.plies + '…';
       render();
     }
-    const rrGen = L.roundRobinSteps(participants, tseed);
-    driveGenerator(rrGen, progress, append, (rrDone) => {
+    function showStandings(standings) {
       append('');
       append('Standings:');
-      rrDone.standings.forEach((s, i) => append('  ' + (i + 1) + '. ' + s.key + '  ' + s.points + 'pt  (' + s.wins + 'W-' + s.losses + 'L-' + s.draws + 'D)'));
-      const seeded = rrDone.standings.map((s) => s.key);
+      standings.forEach((s, i) => append('  ' + (i + 1) + '. ' + s.key + '  ' + s.points + 'pt  (' + s.wins + 'W-' + s.losses + 'L-' + s.draws + 'D)'));
       append('');
-      append('Knockout (seeded): ' + seeded.join(' > '));
-      const koGen = L.knockoutSteps(seeded, tseed);
-      driveGenerator(koGen, progress, append, (koDone) => {
-        append('');
-        append('Champion: ' + koDone.champion);
-        if (runBtn) runBtn.disabled = false;
-      });
+      append('Knockout (seeded): ' + standings.map((s) => s.key).join(' > '));
+    }
+    function finish(champion) { append(''); append('Champion: ' + champion); if (runBtn) runBtn.disabled = false; activeWorker = null; }
+
+    // Preferred path (#95): run the whole tournament in a Web Worker so the UI thread never
+    // blocks — the tab stays fully interactive throughout, not just between plies. The worker
+    // streams the same step objects the generators yield; we render them exactly as the in-thread
+    // path would. Falls back to the in-thread generator drive below when Workers aren't available
+    // (e.g. an ancient browser) or the manifest wasn't exposed — same output, just a blocked tab.
+    if (typeof Worker !== 'undefined' && window.LIB_MANIFEST) {
+      let worker;
+      try { worker = new Worker('engine-worker.js?v=' + window.LIB_MANIFEST.version); }
+      catch (e) { worker = null; }
+      if (worker) {
+        activeWorker = worker;
+        worker.onmessage = (e) => {
+          if (tournamentCancelled) return;
+          const m = e.data;
+          if (m.type === 'step') { if (m.step.type === 'ply') progress(m.step); else append(stepLine(m.step)); }
+          else if (m.type === 'rr-done') showStandings(m.standings);
+          else if (m.type === 'done') { finish(m.champion); stopWorker(); }
+          else if (m.type === 'error') { append('Error: ' + m.message); if (runBtn) runBtn.disabled = false; stopWorker(); }
+        };
+        worker.onerror = (e) => { append('Error: ' + (e.message || 'worker failed')); if (runBtn) runBtn.disabled = false; stopWorker(); };
+        worker.postMessage({ manifest: window.LIB_MANIFEST, job: 'tournament', args: { participants, seed: tseed } });
+        return;
+      }
+    }
+
+    // Fallback: drive the generators on the main thread (blocks the tab, but always completes).
+    const rrGen = L.roundRobinSteps(participants, tseed);
+    driveGenerator(rrGen, progress, append, (rrDone) => {
+      showStandings(rrDone.standings);
+      const koGen = L.knockoutSteps(rrDone.standings.map((s) => s.key), tseed);
+      driveGenerator(koGen, progress, append, (koDone) => finish(koDone.champion));
     });
   }
 

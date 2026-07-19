@@ -26,7 +26,7 @@
   </main>
 
   <!-- CommonJS bridge, then plain view scripts (they read window.Lib after the engine loads). -->
-  <script src="js/loader.js?v=2"></script>
+  <script src="js/loader.js?v=3"></script>
   <script src="js/storage.js?v=4"></script>
   <script src="js/board-view.js?v=2"></script>
   <script src="js/map-view.js?v=4"></script>
@@ -34,7 +34,7 @@
   <script src="js/intake-view.js?v=1"></script>
   <script src="js/station-view.js?v=5"></script>
   <script src="js/match-view.js?v=1"></script>
-  <script src="js/arena-view.js?v=6"></script>
+  <script src="js/arena-view.js?v=7"></script>
   <script src="js/settings-view.js?v=1"></script>
   <script src="js/app.js?v=6"></script>
   <script>
@@ -42,6 +42,10 @@
     var APP_VERSION = 8;
     var LIB_JS = ['board', 'movegen', 'rng', 'mastery', 'game', 'ai', 'analysis', 'puzzle', 'puzzle-bank', 'intake', 'activity', 'tournament', 'matchcode', 'gamification', 'gamification-modules', 'index'];
     var LIB_JSON = ['puzzles-generated', 'puzzles-tactics', 'puzzles-rules', 'puzzles-endgames', 'puzzles-strategy'];
+    // Exposed for the off-main-thread compute worker (engine-worker.js, task #95): it loads lib/
+    // through the same loader with the SAME manifest, so the worker can never drift from the app's
+    // real load order. Single source of truth — the arrays above.
+    window.LIB_MANIFEST = { js: LIB_JS, json: LIB_JSON, version: APP_VERSION };
     // './lib' — a verbatim, checked mirror of the top-level lib/ (see scripts/sync-webapp-lib.js).
     // NOT '../lib': the Level-3 publish tree is self-contained, no parent directory exists.
     window.loadLib('./lib', LIB_JS, LIB_JSON, APP_VERSION).then(function (reg) {
